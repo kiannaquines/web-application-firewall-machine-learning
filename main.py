@@ -33,14 +33,16 @@ X = [
     "search?q=weather",
     "search?q=bag&item=1&product=3",
     "search?q=kiannaquines&item=1&product=3",
-    "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+    "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "dashboard/",
+    "dashboard/users"
 ]
 
 y = [
     1, 1, 1, 1, 1, 1, 1, 1,
     1, 1, 1, 1, 1, 1, 1, 1,
     1, 1, 1, 1, 1, 1,
-    0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0
 ]
 
 def preprocess_text(text):
@@ -69,7 +71,7 @@ print("F1 scores:", scores)
 print("Mean F1 score:", scores.mean())
 print("Accuracy Score:", accuracy)
 
-new_request = 'search?q=kiannaquines&item_count=12&product=3'
+new_request = 'dashboard/index/'
 new_request_processed = preprocess_text(new_request)
 prediction = model.predict(vectorizer.transform([new_request_processed]))
 print("Block Request" if prediction == 1 else "Allow Request")
