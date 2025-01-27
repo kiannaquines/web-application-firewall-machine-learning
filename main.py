@@ -3,6 +3,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+from sklearn.model_selection import cross_val_score
 
 X = [
     "admin' OR 1=1--",                                
@@ -62,6 +63,10 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 accuracy = accuracy_score(y_test, y_pred)
+scores = cross_val_score(model, X_features, y, cv=5, scoring='f1')
+
+print("F1 scores:", scores)
+print("Mean F1 score:", scores.mean())
 print("Accuracy Score:", accuracy)
 
 new_request = 'search?q=kiannaquines&item_count=12&product=3'
