@@ -1,6 +1,8 @@
 import re
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
 X = [
     "admin' OR 1=1--",                                
@@ -29,6 +31,7 @@ X = [
     "/index.html",
     "search?q=weather",
     "search?q=bag&item=1&product=3",
+    "search?q=kiannaquines&item=1&product=3",
     "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 ]
 
@@ -36,15 +39,32 @@ y = [
     1, 1, 1, 1, 1, 1, 1, 1,
     1, 1, 1, 1, 1, 1, 1, 1,
     1, 1, 1, 1, 1, 1,
-    0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0,
 ]
 
-vectorizer = TfidfVectorizer(ngram_range=(1, 2))
-X_features = vectorizer.fit_transform(X)
+def preprocess_text(text):
+    text = text.lower()
+    text = re.sub(r'\s+', ' ', text)
+    text = re.sub(r'[^\w\s]', '', text)
+    return text
 
-model = LogisticRegression()
-model.fit(X_features, y)
+X_processed = [preprocess_text(payload) for payload in X]
 
-new_request = 'search?q=%kiannaquines%'
-prediction = model.predict(vectorizer.transform([new_request]))
+vectorizer = TfidfVectorizer(analyzer='char', ngram_range=(3, 5))
+X_features = vectorizer.fit_transform(X_processed)
+
+X_train, X_test, y_train, y_test = train_test_split(X_features, y, test_size=0.2, random_state=42)
+
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+model.fit(X_train, y_train)
+
+
+y_pred = model.predict(X_test)
+
+accuracy = accuracy_score(y_test, y_pred)
+print("Accuracy Score:", accuracy)
+
+new_request = 'search?q=kiannaquines&item_count=12&product=3'
+new_request_processed = preprocess_text(new_request)
+prediction = model.predict(vectorizer.transform([new_request_processed]))
 print("Block Request" if prediction == 1 else "Allow Request")
