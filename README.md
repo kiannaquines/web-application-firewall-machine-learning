@@ -5,6 +5,6 @@
 
 ## Model
 
-<p>The model was trained on DecisionTreeClassifier & RandomForest, each algorithm got there own accuracy score.</p>
+<p>The model was trained on both DecisionTreeClassifier & RandomForest, each algorithm got there own accuracy score.</p>
 
 ![Image](https://github.com/user-attachments/assets/167fe288-6674-47d1-a71e-427b866446e2)
