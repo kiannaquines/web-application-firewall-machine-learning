@@ -9,3 +9,12 @@
 <p>The model was trained on both DecisionTreeClassifier & RandomForest, each algorithm got there own accuracy score.</p>
 
 ![Image](https://github.com/user-attachments/assets/167fe288-6674-47d1-a71e-427b866446e2)
+
+
+# Result
+
+![Image](https://github.com/user-attachments/assets/1b9ec1fa-a955-4597-b81e-fd03b3857a89)
+
+![Image](https://github.com/user-attachments/assets/d9e6cd97-8a1b-47e0-894e-986dbc387872)
+
+![Image](https://github.com/user-attachments/assets/9109e76b-0cee-44c6-b9ac-5c33d53e7e4e)
