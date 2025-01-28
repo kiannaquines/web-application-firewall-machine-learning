@@ -5,7 +5,7 @@
 ![Image](https://github.com/user-attachments/assets/cf4991c8-c930-4cf5-b198-533629cb175f)
 
 ## Model
-<p>Fitting the model in each algorithm takes <b>4 hours</b> becasue of crappy specs of my laptop (CPU Based). It was so slow in fitting since the dataset that the model was trained has 100k+ records no GPU. 😅</p>
+<p>Fitting the model in each algorithm takes <b>4 hours</b> because of crappy specs of my laptop (CPU Based). It was so slow in fitting since the dataset that the model was trained has 100k+ records no GPU. 😅</p>
 <p>The model was trained on both DecisionTreeClassifier & RandomForest, each algorithm got there own accuracy score.</p>
 
 ![Image](https://github.com/user-attachments/assets/167fe288-6674-47d1-a71e-427b866446e2)
