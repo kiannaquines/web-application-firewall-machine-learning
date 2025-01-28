@@ -22,3 +22,17 @@
 
 
 ![Image](https://github.com/user-attachments/assets/9109e76b-0cee-44c6-b9ac-5c33d53e7e4e)
+
+
+## Take Aways
+
+1. Since some of the payloads are missed in classifiying whether the request is Malicious or Not we must include the missed payload in the training and testing phase.
+
+2. We can use RNN or CNN for this web application firewall.
+
+
+## Future Plan
+
+
+1. Integrate a Web Dashboard
+2. Implement using Neural Network
