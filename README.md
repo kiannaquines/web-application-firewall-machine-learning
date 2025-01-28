@@ -1,9 +1,10 @@
 ## Web Application Firewall
 
-![Image](https://github.com/user-attachments/assets/375406bd-7fef-4c6f-b840-b9d0bda76fcb)
+![Image](https://github.com/user-attachments/assets/0f4e5ac3-c9bf-4524-ba1c-14a5cb99697f)
+![Image](https://github.com/user-attachments/assets/cf4991c8-c930-4cf5-b198-533629cb175f)
 
-![Image](https://github.com/user-attachments/assets/9b6f89e2-8f09-4302-b50f-9f893b752e6a)
+## Model
 
-## Currently on Development Phase
+<p>The model was trained on DecisionTreeClassifier & RandomForest, each algorithm got there own accuracy score.</p>
 
-<p>This project is currently in development :)</p>
+![Image](https://github.com/user-attachments/assets/167fe288-6674-47d1-a71e-427b866446e2)
