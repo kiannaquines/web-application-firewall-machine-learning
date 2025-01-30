@@ -31,7 +31,7 @@
 2. We can use RNN or CNN for this web application firewall.
 
 
-## Future Plan
+## Future Integration 
 
 
 1. Integrate a Web Dashboard
