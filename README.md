@@ -1,5 +1,5 @@
 ## Web Application Firewall
-<p>This is my own version of implementing a web application firewall using machine learning algorithms.</p>
+<p>This is my own version of implementing a web application firewall using machine learning algorithm.</p>
 
 ![Image](https://github.com/user-attachments/assets/0f4e5ac3-c9bf-4524-ba1c-14a5cb99697f)
 ![Image](https://github.com/user-attachments/assets/cf4991c8-c930-4cf5-b198-533629cb175f)
