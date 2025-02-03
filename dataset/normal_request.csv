@@ -1,0 +1,503 @@
+payload,label
+POST /contact HTTP/1.0,0
+GET /profile HTTP/2,0
+DELETE /home HTTP/1.1,0
+PUT /search HTTP/1.1,0
+GET /api/data HTTP/1.0,0
+PATCH /api/user HTTP/1.1,0
+POST /terms HTTP/1.0,0
+GET /dashboard HTTP/1.1,0
+PUT /logout HTTP/2,0
+GET /about HTTP/1.0,0
+POST /profile HTTP/2,0
+GET / HTTP/1.1,0
+PATCH /signup HTTP/1.0,0
+PUT /privacy HTTP/1.1,0
+GET /api/data HTTP/2,0
+POST /help HTTP/1.1,0
+DELETE /home HTTP/2,0
+GET /settings HTTP/1.1,0
+PUT /api/user HTTP/1.0,0
+POST /logout HTTP/2,0
+GET /search HTTP/1.0,0
+DELETE /profile HTTP/1.1,0
+POST /about HTTP/2,0
+GET /terms HTTP/1.0,0
+PATCH /logout HTTP/1.1,0
+GET /dashboard HTTP/1.0,0
+POST /home HTTP/1.1,0
+PUT /privacy HTTP/2,0
+GET /signup HTTP/1.1,0
+PATCH /profile HTTP/1.0,0
+POST /product/456 HTTP/1.1,0
+GET /messages HTTP/2,0
+PUT /checkout HTTP/1.0,0
+DELETE /orders/456 HTTP/1.1,0
+POST /profile HTTP/1.1,0
+PATCH /settings HTTP/2,0
+GET /api/data HTTP/1.0,0
+PUT /wishlist HTTP/1.1,0
+GET /api/v1/items HTTP/2,0
+POST /payment/history HTTP/1.0,0
+GET /cart HTTP/1.1,0
+PATCH /orders HTTP/2,0
+POST /help HTTP/1.1,0
+DELETE /product/789 HTTP/1.0,0
+GET /terms HTTP/2,0
+POST /payment HTTP/1.1,0
+PATCH /api/v1/auth HTTP/1.0,0
+GET /notifications HTTP/2,0
+POST /orders/456 HTTP/1.1,0
+PUT /privacy HTTP/1.0,0
+GET /order/track HTTP/2,0
+POST /about HTTP/1.1,0
+PATCH /profile HTTP/1.0,0
+GET /search HTTP/1.1,0
+POST /checkout HTTP/1.0,0
+DELETE /wishlist HTTP/1.1,0
+PUT /product/123 HTTP/1.0,0
+GET /home HTTP/2,0
+POST /login HTTP/1.1,0
+PATCH /cart HTTP/1.0,0
+GET /checkout?username=john&page=1&limit=10 HTTP/1.1,0
+GET /api/v1/products?q=python&type=tutorial HTTP/1.1,0
+GET /cart?lang=en&region=US HTTP/1.1,0
+GET /search?search=laptop&brand=HP HTTP/1.1,0
+GET /orders?order_id=5678&status=shipped HTTP/1.1,0
+GET /wishlist?limit=50&offset=0 HTTP/1.1,0
+GET /search/results?keyword=camera&category=gadgets HTTP/1.1,0
+GET /product/123?user_id=1&filter=active HTTP/1.1,0
+GET /api/user/1?search=shoes&size=8 HTTP/1.1,0
+GET /dashboard?filter=discounted&sort=popularity HTTP/1.1,0
+GET /notifications?username=john&page=1&limit=10 HTTP/1.1,0
+GET /offers?price_min=100&price_max=1000 HTTP/1.1,0
+GET /reviews?user=jane&status=active HTTP/1.1,0
+GET /api/product/789?ref=affiliate&utm_source=newsletter HTTP/1.1,0
+GET /products/456?category=electronics&sort=price&order=asc HTTP/1.1,0
+GET /api/orders?limit=50&offset=0 HTTP/1.1,0
+GET /home?user=jane&status=active HTTP/1.1,0
+GET /shop?product_id=123&color=red&size=M HTTP/1.1,0
+GET /search?search=python&type=tutorial HTTP/1.1,0
+GET /api/v1/cart?product_id=456&quantity=2 HTTP/1.1,0
+GET /api/v1/users?lang=en&region=US HTTP/1.1,0
+GET /products/123?category=gadgets HTTP/1.1,0
+GET /api/v1/orders?order_id=12345&status=pending HTTP/1.1,0
+GET /cart?keyword=laptop HTTP/1.1,0
+GET /order/status?order_id=5678 HTTP/1.1,0
+GET /api/user/1?status=active HTTP/1.1,0
+GET /products/789?category=electronics&price_min=100&price_max=500 HTTP/1.1,0
+GET /profile?username=john&limit=10 HTTP/1.1,0
+GET /api/orders?status=completed&user_id=1 HTTP/1.1,0
+GET /search?keyword=phone&category=electronics HTTP/1.1,0
+GET /settings?lang=en HTTP/1.1,0
+GET /wishlist?keyword=laptop&brand=Dell&price_min=500&price_max=1500 HTTP/1.1,0
+GET /profile?user=jane&page=2&limit=5 HTTP/1.1,0
+GET /orders?order_id=112233&track=true HTTP/1.1,0
+GET /reviews?q=smartphone&limit=20&sort=price&order=asc HTTP/1.1,0
+GET /api/users?status=active HTTP/1.1,0
+GET /checkout?user_id=42&status=active HTTP/1.1,0
+GET /payment?user_id=123&action=delete HTTP/1.1,0
+GET /api/products?product_id=1001&color=blue&size=M HTTP/1.1,0
+GET /shop?search=camera&min_price=100&max_price=1000 HTTP/1.1,0
+GET /orders/status?order_id=98765&status=pending HTTP/1.1,0
+GET /notifications?user=bob&sort=name HTTP/1.1,0
+GET /api/items?category=electronics&discount=yes HTTP/1.1,0
+GET /cart?filter=popular&sort=rating HTTP/1.1,0
+GET /api/payment?payment_status=paid&method=credit_card HTTP/1.1,0
+GET /orders/history?status=completed&order_by=date HTTP/1.1,0
+GET /api/auth?lang=en&currency=USD HTTP/1.1,0
+GET /search?product_id=789&action=add_to_cart HTTP/1.1,0
+GET /api/users?page=1&size=10 HTTP/1.1,0
+GET /orders/status?order_id=112233&track=true HTTP/1.1,0
+GET /products?user_id=123&action=delete HTTP/1.1,0
+GET /messages?user=alice&filter=verified HTTP/1.1,0
+GET /api/orders?search=tv&model=Samsung HTTP/1.1,0
+GET /reviews?keyword=laptop&brand=Dell&price_min=500&price_max=1500 HTTP/1.1,0
+GET /search?status=completed&order_by=date HTTP/1.1,0
+GET /users?filter=new HTTP/1.1,0
+GET /notifications?status=shipped&tracking_id=ABC123 HTTP/1.1,0
+GET /api/v1/cart?user_id=42&status=active HTTP/1.1,0
+GET /offers?category=toys&age_group=5-10 HTTP/1.1,0
+GET /products?discount_code=SAVE20&limit=1 HTTP/1.1,0
+GET /api/v1/orders?order_id=98765&track=true HTTP/1.1,0
+GET /search/results?q=headphones&brand=Sony&color=black HTTP/1.1,0
+GET /api/users?page=1&size=10 HTTP/1.1,0
+GET /checkout?category=fashion&filter=new HTTP/1.1,0
+GET /products?search=smartphone&limit=50&sort=price&order=asc&color=black&min_price=100&max_price=1000 HTTP/1.1,0
+GET /profile?user_id=42&status=active&filter=verified&page=3&per_page=20&action=edit HTTP/1.1,0
+"GET /api/orders?q=laptop&brand=Dell&min_price=500&max_price=2000&features=touchscreen,8GB RAM&stock=in_stock&rating=4.5 HTTP/1.1",0
+GET /cart?category=fashion&filter=new&size=M&color=red&material=cotton&brand=Nike&price_min=50&price_max=200 HTTP/1.1,0
+GET /checkout?product_id=1001&color=blue&size=M&quantity=2&delivery=overnight&promo_code=SALE20 HTTP/1.1,0
+"GET /orders?user=alice&age=25&location=NY&preferences=vegan, fitness&newsletter=yes&purchased_recently=true HTTP/1.1",0
+"GET /search?headphones&brand=Sony&type=wireless&rating=4&price_min=50&price_max=300&color=black,white HTTP/1.1",0
+GET /orders/history?user_id=123&action=delete&page=1&limit=10&filter=active&date_range=2025-01-01_to_2025-12-31 HTTP/1.1,0
+GET /product/1001?search=camera&min_price=150&max_price=1000&brand=Canon&rating=4.5&delivery_time=2-4 days HTTP/1.1,0
+GET /profile?user=john&status=active&recent_orders=true&referrals=true&sort=date&page=2 HTTP/1.1,0
+GET /categories?category=electronics&discount=yes&free_shipping=yes&deal_of_the_day=true&rating=5 HTTP/1.1,0
+GET /products/search?search=tv&brand=Samsung&min_price=300&max_price=2000&size=55 inches&type=LED HTTP/1.1,0
+GET /profile?user_id=789&status=inactive&reason=not_logged_in&last_login=2025-01-15&account_type=premium HTTP/1.1,0
+GET /orders?order_id=12345&action=update&new_status=completed&order_details=updated&delivery_method=standard HTTP/1.1,0
+GET /payment?payment_method=credit_card&amount=250&currency=USD&payment_status=completed&transaction_id=TX1234567890 HTTP/1.1,0
+GET /cart?product_id=2022&action=add_to_cart&quantity=3&price=199.99&coupon_code=DISCOUNT10 HTTP/1.1,0
+GET /orders?user=bob&search=shoes&brand=Adidas&size=9&color=blue&style=sportswear&price_min=50&price_max=150 HTTP/1.1,0
+GET /products?page=1&items_per_page=25&filter=available&order_by=popularity&sort_direction=desc HTTP/1.1,0
+GET /offers?event=sale&category=electronics&discount=true&start_date=2025-02-01&end_date=2025-02-28 HTTP/1.1,0
+GET /auth/login?username=johndoe&password=password123&remember_me=true&referrer=newsletter HTTP/1.1,0
+GET /settings?language=en&country=US&currency=USD&timezone=UTC+0&sort_by=date&page=1&results_per_page=10 HTTP/1.1,0
+GET /search?q=gaming laptop&brand=Asus&min_price=800&max_price=3000&ram=16GB&cpu=i7 HTTP/1.1,0
+GET /cart?item_id=523&quantity=5&delivery_option=express&gift_wrap=yes&personal_message=Happy Birthday! HTTP/1.1,0
+"GET /products?filter=new_arrivals&page=1&size=20&sort=date&color=black,gray,red&material=leather,cotton HTTP/1.1",0
+GET /users?user=carla&filter=premium&membership=gold&status=active&access_level=full HTTP/1.1,0
+GET /orders?order_id=456789&customer_id=1234&status=shipped&shipping_method=overnight&tracking_number=XYZ123 HTTP/1.1,0
+GET /products?category=beauty&brand=L'Oreal&min_price=15&max_price=150&ratings=4.5&availability=in_stock HTTP/1.1,0
+GET /items/product/2035?color=green&size=L&style=casual&price=49.99&availability=available&delivery_time=5-7 days HTTP/1.1,0
+GET /search?q=organic tea&filter=green&size=100g&brand=Tazo&price_min=5&price_max=30&rating=4.7 HTTP/1.1,0
+POST /search HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nq=hello+world,0
+POST /login HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=johndoe&password=secretpassword123,0
+POST /register HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nemail=johndoe@example.com&password=strongpassword&confirm_password=strongpassword,0
+POST /add-to-cart HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=123&quantity=2&size=M&color=red,0
+POST /checkout HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_method=credit_card&amount=150.75&currency=USD,0
+"POST /update-profile HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=42&first_name=John&last_name=Doe&address=456+Oak+St,+NY",0
+POST /submit-feedback HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=25&rating=4&comments=Great+service+but+slow+delivery,0
+POST /order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=56789&status=pending&shipping_method=express,0
+POST /payment HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_method=paypal&amount=99.99&currency=USD&transaction_id=TX123456,0
+POST /contact-us HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nname=John+Doe&email=johndoe@example.com&message=I+need+help+with+my+order,0
+POST /subscribe HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nemail=johndoe@example.com&subscription_type=monthly&preferences=tech_news,0
+POST /reset-password HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nemail=johndoe@example.com&new_password=newpassword123,0
+POST /search HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nq=smartphone+2025&category=electronics&min_price=100&max_price=500,0
+POST /feedback HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=25&rating=5&comments=Excellent+product,0
+POST /add-review HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=1234&review=Great+quality+for+the+price&rating=4,0
+POST /update-cart HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncart_id=456&product_id=789&quantity=3,0
+POST /remove-item HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncart_id=456&item_id=789,0
+POST /order-status HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=2345&status=shipped&tracking_number=ABCD1234,0
+POST /apply-coupon HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncoupon_code=SUMMER2025&cart_id=456,0
+POST /wishlist HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=789&action=add,0
+POST /logout HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=42,0
+POST /update-email HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=42&new_email=johndoe_new@example.com,0
+POST /product-details HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=123&include_reviews=true,0
+POST /track-order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=98765&tracking_number=TX9876543210,0
+POST /change-password HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=25&old_password=oldpassword&new_password=newpassword,0
+POST /apply-referral HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nreferral_code=NEWUSER1234&user_id=42,0
+POST /cancel-order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=4567&reason=customer_request,0
+"POST /address-update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=34&address=123+Main+St,+NY",0
+POST /return-item HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=12345&item_id=54321&reason=defective,0
+POST /post-review HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=555&review=Good+quality&rating=5,0
+"POST /update-shipping HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=6789&new_address=1234+Park+Ave,+NY",0
+POST /delete-account HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=42&confirmation=true,0
+POST /wishlist-remove HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nwishlist_id=123&product_id=789&action=remove,0
+POST /submit-order HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=101112&status=pending&payment_method=credit_card,0
+POST /track-shipment HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntracking_number=TX123456789&carrier=UPS,0
+POST /user-settings HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=789&theme=dark&language=EN,0
+POST /login HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nemail=johndoe@example.com&password=abc123,0
+POST /signup HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nusername=johndoe&email=johndoe@example.com&password=secret&confirm_password=secret,0
+POST /product/add HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_name=Wireless+Mouse&category=electronics&price=25.99&quantity=100,0
+"POST /order/create HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=45&order_items=123,456&total=125.75&payment_method=credit_card",0
+POST /order/cancel HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=1245&reason=customer_request,0
+POST /update-profile HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=5&first_name=John&last_name=Doe&phone=123456789,0
+POST /update-password HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=5&old_password=oldpass&new_password=newpass123,0
+POST /cart/add HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncart_id=10&product_id=25&quantity=2,0
+POST /cart/remove HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncart_id=10&product_id=25,0
+POST /feedback/submit HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=5&rating=4&comments=Great+product,0
+POST /order/track HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=4567&tracking_code=TRACK12345,0
+POST /wishlist/add HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=5&product_id=50,0
+POST /wishlist/remove HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=5&product_id=50,0
+POST /review/submit HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=50&review_text=Amazing+item&rating=5,0
+POST /product/details HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=123&include_reviews=true&currency=USD,0
+POST /order/return HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=7890&item_id=25&reason=wrong_size,0
+POST /product/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nproduct_id=123&name=New+Wireless+Mouse&price=29.99,0
+POST /user/logout HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=5,0
+POST /subscribe HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nemail=johndoe@example.com&plan=monthly,0
+POST /payment/process HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=1234&payment_method=paypal&amount=199.99,0
+POST /notification/subscribe HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=5&notification_type=email&frequency=weekly,0
+POST /shipping/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=3456&address=New+York+City&method=express,0
+POST /account/delete HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=5&reason=privacy,0
+POST /product/search HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nq=laptop&category=electronics&brand=Dell,0
+POST /discount/apply HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=456&discount_code=SUMMER20,0
+POST /event/register HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nevent_id=123&user_id=5&attending=true,0
+POST /event/cancel HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nevent_id=123&user_id=5,0
+POST /payment/verify HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\npayment_id=987654&status=success,0
+"POST /order/modify HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\norder_id=1025&new_items=25,50&quantity=2",0
+POST /address/add HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=5&address=1234+Oak+Street&city=NY&zipcode=10001,0
+POST /address/update HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=5&address_id=1&new_address=5678+Pine+Street&city=NY&zipcode=10002,0
+POST /address/remove HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nuser_id=5&address_id=1,0
+POST /cart/checkout HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncart_id=10&payment_method=credit_card&shipping_address=456+Elm+Street,0
+POST /cart/clear HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ncart_id=10,0
+POST /tracking/status HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\ntracking_number=123456789&carrier=ups,0
+POST /referral/apply HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nreferral_code=NEWUSER20&user_id=5,0
+POST /help/contact HTTP/1.1\nContent-Type: application/x-www-form-urlencoded\nname=John+Doe&email=johndoe@example.com&query=How+to+track+my+order,0
+"POST /login HTTP/1.1\nContent-Type: application/json\n{""email"": ""johndoe@example.com"", ""password"": ""abc123""}",0
+"POST /signup HTTP/1.1\nContent-Type: application/json\n{""username"": ""johndoe"", ""email"": ""johndoe@example.com"", ""password"": ""secret"", ""confirm_password"": ""secret""}",0
+"POST /product/add HTTP/1.1\nContent-Type: application/json\n{""product_name"": ""Wireless Mouse"", ""category"": ""electronics"", ""price"": 25.99, ""quantity"": 100}",0
+"POST /order/create HTTP/1.1\nContent-Type: application/json\n{""user_id"": 45, ""order_items"": [123, 456], ""total"": 125.75, ""payment_method"": ""credit_card""}",0
+"POST /order/cancel HTTP/1.1\nContent-Type: application/json\n{""order_id"": 1245, ""reason"": ""customer_request""}",0
+"POST /update-profile HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""first_name"": ""John"", ""last_name"": ""Doe"", ""phone"": ""123456789""}",0
+"POST /update-password HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""old_password"": ""oldpass"", ""new_password"": ""newpass123""}",0
+"POST /cart/add HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 10, ""product_id"": 25, ""quantity"": 2}",0
+"POST /cart/remove HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 10, ""product_id"": 25}",0
+"POST /feedback/submit HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""rating"": 4, ""comments"": ""Great product""}",0
+"POST /order/track HTTP/1.1\nContent-Type: application/json\n{""order_id"": 4567, ""tracking_code"": ""TRACK12345""}",0
+"POST /wishlist/add HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""product_id"": 50}",0
+"POST /wishlist/remove HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""product_id"": 50}",0
+"POST /review/submit HTTP/1.1\nContent-Type: application/json\n{""product_id"": 50, ""review_text"": ""Amazing item"", ""rating"": 5}",0
+"POST /product/details HTTP/1.1\nContent-Type: application/json\n{""product_id"": 123, ""include_reviews"": true, ""currency"": ""USD""}",0
+"POST /order/return HTTP/1.1\nContent-Type: application/json\n{""order_id"": 7890, ""item_id"": 25, ""reason"": ""wrong_size""}",0
+"POST /product/update HTTP/1.1\nContent-Type: application/json\n{""product_id"": 123, ""name"": ""New Wireless Mouse"", ""price"": 29.99}",0
+"POST /user/logout HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5}",0
+"POST /subscribe HTTP/1.1\nContent-Type: application/json\n{""email"": ""johndoe@example.com"", ""plan"": ""monthly""}",0
+"POST /payment/process HTTP/1.1\nContent-Type: application/json\n{""order_id"": 1234, ""payment_method"": ""paypal"", ""amount"": 199.99}",0
+"POST /notification/subscribe HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""notification_type"": ""email"", ""frequency"": ""weekly""}",0
+"POST /shipping/update HTTP/1.1\nContent-Type: application/json\n{""order_id"": 3456, ""address"": ""New York City"", ""method"": ""express""}",0
+"POST /account/delete HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""reason"": ""privacy""}",0
+"POST /product/search HTTP/1.1\nContent-Type: application/json\n{""q"": ""laptop"", ""category"": ""electronics"", ""brand"": ""Dell""}",0
+"POST /discount/apply HTTP/1.1\nContent-Type: application/json\n{""order_id"": 456, ""discount_code"": ""SUMMER20""}",0
+"POST /event/register HTTP/1.1\nContent-Type: application/json\n{""event_id"": 123, ""user_id"": 5, ""attending"": true}",0
+"POST /event/cancel HTTP/1.1\nContent-Type: application/json\n{""event_id"": 123, ""user_id"": 5}",0
+"POST /payment/verify HTTP/1.1\nContent-Type: application/json\n{""payment_id"": 987654, ""status"": ""success""}",0
+"POST /order/modify HTTP/1.1\nContent-Type: application/json\n{""order_id"": 1025, ""new_items"": [25, 50], ""quantity"": 2}",0
+"POST /address/add HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""address"": ""1234 Oak Street"", ""city"": ""NY"", ""zipcode"": ""10001""}",0
+"POST /address/update HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""address_id"": 1, ""new_address"": ""5678 Pine Street"", ""city"": ""NY"", ""zipcode"": ""10002""}",0
+"POST /address/remove HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""address_id"": 1}",0
+"POST /cart/checkout HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 10, ""payment_method"": ""credit_card"", ""shipping_address"": ""456 Elm Street""}",0
+"POST /cart/clear HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 10}",0
+"POST /tracking/status HTTP/1.1\nContent-Type: application/json\n{""tracking_number"": ""123456789"", ""carrier"": ""ups""}",0
+"POST /referral/apply HTTP/1.1\nContent-Type: application/json\n{""referral_code"": ""NEWUSER20"", ""user_id"": 5}",0
+"POST /help/contact HTTP/1.1\nContent-Type: application/json\n{""name"": ""John Doe"", ""email"": ""johndoe@example.com"", ""query"": ""How to track my order""}",0
+"POST /login HTTP/1.1\nContent-Type: application/json\n{""email"": ""johndoe@example.com"", ""password"": ""abc123"", ""remember_me"": true, ""device_info"": {""device_type"": ""mobile"", ""os"": ""android"", ""app_version"": ""2.1.5""}}",0
+"POST /signup HTTP/1.1\nContent-Type: application/json\n{""username"": ""johndoe"", ""email"": ""johndoe@example.com"", ""password"": ""secret"", ""confirm_password"": ""secret"", ""phone_number"": ""+123456789"", ""referral_code"": ""NEWUSER2025""}",0
+"POST /product/add HTTP/1.1\nContent-Type: application/json\n{""product_name"": ""Wireless Mouse"", ""category"": ""electronics"", ""price"": 25.99, ""quantity"": 100, ""tags"": [""tech"", ""accessories"", ""gadgets""], ""description"": ""A high precision wireless mouse with ergonomic design."", ""dimensions"": {""length"": ""5"", ""width"": ""3"", ""height"": ""1""}, ""color"": ""black""}",0
+"POST /order/create HTTP/1.1\nContent-Type: application/json\n{""user_id"": 45, ""order_items"": [{""product_id"": 123, ""quantity"": 1}, {""product_id"": 456, ""quantity"": 2}], ""total"": 125.75, ""payment_method"": ""credit_card"", ""shipping_address"": {""line_1"": ""1234 Oak St"", ""city"": ""NY"", ""zipcode"": ""10001"", ""country"": ""USA""}, ""coupon_code"": ""SUMMER2025""}",0
+"POST /order/cancel HTTP/1.1\nContent-Type: application/json\n{""order_id"": 1245, ""reason"": ""customer_request"", ""refund_method"": ""credit_card"", ""refund_amount"": 125.75, ""cancelation_time"": ""2025-02-02T15:30:00""}",0
+"POST /update-profile HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""first_name"": ""John"", ""last_name"": ""Doe"", ""phone"": ""123456789"", ""address"": {""line_1"": ""5678 Pine St"", ""city"": ""NY"", ""zipcode"": ""10002"", ""country"": ""USA""}, ""preferences"": {""newsletter"": true, ""sms_notifications"": false}}",0
+"POST /update-password HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""old_password"": ""oldpass"", ""new_password"": ""newpass123"", ""password_strength"": {""length"": 12, ""contains_special_char"": true, ""contains_numbers"": true, ""contains_uppercase"": true}}",0
+"POST /cart/add HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 10, ""product_id"": 25, ""quantity"": 2, ""notes"": ""Gift wrap"", ""customizations"": {""color"": ""red"", ""engraving"": ""Happy Birthday""}}",0
+"POST /cart/remove HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 10, ""product_id"": 25, ""reason"": ""wrong_item""}",0
+"POST /feedback/submit HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""rating"": 4, ""comments"": ""Great product, fast shipping!"", ""feedback_type"": ""purchase"", ""date"": ""2025-02-02""}",0
+"POST /order/track HTTP/1.1\nContent-Type: application/json\n{""order_id"": 4567, ""tracking_code"": ""TRACK12345"", ""carrier"": ""UPS"", ""shipping_status"": ""shipped"", ""estimated_delivery"": ""2025-02-05"", ""current_location"": ""NYC, NY""}",0
+"POST /wishlist/add HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""product_id"": 50, ""notes"": ""Wishlist for birthday gift""}",0
+"POST /wishlist/remove HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""product_id"": 50, ""reason"": ""not_needed""}",0
+"POST /review/submit HTTP/1.1\nContent-Type: application/json\n{""product_id"": 50, ""review_text"": ""Amazing item, exactly as described. Highly recommended."", ""rating"": 5, ""reviewer_name"": ""Jane Doe"", ""review_date"": ""2025-02-02""}",0
+"POST /product/details HTTP/1.1\nContent-Type: application/json\n{""product_id"": 123, ""include_reviews"": true, ""currency"": ""USD"", ""dimensions"": {""length"": 10, ""width"": 5, ""height"": 3}, ""material"": ""plastic"", ""availability"": {""in_stock"": true, ""stock_quantity"": 200}}",0
+"POST /order/return HTTP/1.1\nContent-Type: application/json\n{""order_id"": 7890, ""item_id"": 25, ""reason"": ""wrong_size"", ""requested_refund"": 25.99, ""return_method"": ""store_credit""}",0
+"POST /product/update HTTP/1.1\nContent-Type: application/json\n{""product_id"": 123, ""name"": ""New Wireless Mouse"", ""price"": 29.99, ""quantity"": 50, ""description"": ""Updated version with better battery life."", ""tags"": [""tech"", ""gadgets""], ""dimensions"": {""length"": ""5"", ""width"": ""3"", ""height"": ""1.2""}}",0
+"POST /user/logout HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""session_token"": ""abcd1234"", ""logout_time"": ""2025-02-02T16:00:00""}",0
+"POST /subscribe HTTP/1.1\nContent-Type: application/json\n{""email"": ""johndoe@example.com"", ""plan"": ""monthly"", ""preferences"": {""category"": ""technology"", ""frequency"": ""daily""}}",0
+"POST /payment/process HTTP/1.1\nContent-Type: application/json\n{""order_id"": 1234, ""payment_method"": ""paypal"", ""amount"": 199.99, ""transaction_id"": ""TX12345"", ""payment_status"": ""completed"", ""billing_address"": {""line_1"": ""1234 Oak St"", ""city"": ""NY"", ""zipcode"": ""10001"", ""country"": ""USA""}}",0
+"POST /notification/subscribe HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""notification_type"": ""email"", ""frequency"": ""weekly"", ""preferred_time"": ""09:00 AM""}",0
+"POST /shipping/update HTTP/1.1\nContent-Type: application/json\n{""order_id"": 3456, ""address"": ""New York City"", ""method"": ""express"", ""delivery_instructions"": ""Leave at front door""}",0
+"POST /account/delete HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""reason"": ""privacy"", ""confirmation"": true, ""delete_time"": ""2025-02-02T17:00:00""}",0
+"POST /product/search HTTP/1.1\nContent-Type: application/json\n{""q"": ""laptop"", ""category"": ""electronics"", ""brand"": ""Dell"", ""price_range"": {""min"": 100, ""max"": 1500}, ""filters"": {""rating"": 4, ""availability"": ""in_stock""}}",0
+"POST /discount/apply HTTP/1.1\nContent-Type: application/json\n{""order_id"": 456, ""discount_code"": ""SUMMER20"", ""total_before_discount"": 200.00, ""discount_amount"": 40.00, ""new_total"": 160.00}",0
+"POST /event/register HTTP/1.1\nContent-Type: application/json\n{""event_id"": 123, ""user_id"": 5, ""attending"": true, ""event_details"": {""location"": ""NYC"", ""date"": ""2025-02-25"", ""time"": ""10:00 AM""}}",0
+"POST /event/cancel HTTP/1.1\nContent-Type: application/json\n{""event_id"": 123, ""user_id"": 5, ""reason"": ""schedule_conflict""}",0
+"POST /payment/verify HTTP/1.1\nContent-Type: application/json\n{""payment_id"": 987654, ""status"": ""success"", ""amount_verified"": 199.99, ""payment_method"": ""credit_card""}",0
+"POST /order/modify HTTP/1.1\nContent-Type: application/json\n{""order_id"": 1025, ""new_items"": [{""product_id"": 25, ""quantity"": 2}, {""product_id"": 50, ""quantity"": 1}], ""new_total"": 135.75, ""notes"": ""Modify order for extra items""}",0
+"POST /address/add HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""address"": {""line_1"": ""1234 Oak Street"", ""city"": ""NY"", ""zipcode"": ""10001"", ""country"": ""USA""}, ""phone"": ""+123456789""}",0
+"POST /address/update HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""address_id"": 1, ""new_address"": {""line_1"": ""5678 Pine Street"", ""city"": ""NY"", ""zipcode"": ""10002"", ""country"": ""USA""}, ""phone"": ""+987654321""}",0
+"POST /address/remove HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""address_id"": 1, ""reason"": ""moved""}",0
+"POST /cart/checkout HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 10, ""payment_method"": ""credit_card"", ""shipping_address"": {""line_1"": ""456 Elm Street"", ""city"": ""NY"", ""zipcode"": ""10002"", ""country"": ""USA""}, ""coupon_code"": ""WINTERSALE""}",0
+"POST /cart/clear HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 10, ""reason"": ""user_request""}",0
+"POST /tracking/status HTTP/1.1\nContent-Type: application/json\n{""tracking_number"": ""123456789"", ""carrier"": ""ups"", ""current_location"": ""NYC, NY"", ""estimated_delivery"": ""2025-02-05"", ""status"": ""in_transit""}",0
+"POST /referral/apply HTTP/1.1\nContent-Type: application/json\n{""referral_code"": ""NEWUSER20"", ""user_id"": 5, ""discount"": 20.00, ""applied_on_order"": 1234}",0
+"POST /help/contact HTTP/1.1\nContent-Type: application/json\n{""name"": ""John Doe"", ""email"": ""johndoe@example.com"", ""query"": ""How to track my order"", ""subject"": ""Order Tracking"", ""message"": ""Please provide details for tracking my recent order.""}",0
+"POST /review/update HTTP/1.1\nContent-Type: application/json\n{""review_id"": 3456, ""updated_text"": ""Updated review, still satisfied but delivery was a bit late."", ""rating"": 4, ""date_updated"": ""2025-02-02""}",0
+"POST /product/delete HTTP/1.1\nContent-Type: application/json\n{""product_id"": 123, ""reason"": ""discontinued""}",0
+"POST /subscription/cancel HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""subscription_id"": 12345, ""reason"": ""no_longer_interested"", ""cancellation_date"": ""2025-02-02""}",0
+"POST /discount/verify HTTP/1.1\nContent-Type: application/json\n{""discount_code"": ""HOLIDAY10"", ""order_id"": 345, ""total_amount"": 250.00, ""verified_discount"": 25.00}",0
+"POST /user/preferences HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""email_notifications"": true, ""sms_notifications"": false, ""push_notifications"": true}",0
+"POST /transaction/refund HTTP/1.1\nContent-Type: application/json\n{""transaction_id"": ""TX12345"", ""refund_amount"": 100.00, ""reason"": ""order_cancellation"", ""refunded_to"": ""credit_card""}",0
+"POST /user/verify HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""verification_code"": ""ABC123"", ""email"": ""johndoe@example.com"", ""verification_type"": ""email""}",0
+"POST /product/rate HTTP/1.1\nContent-Type: application/json\n{""product_id"": 50, ""rating"": 4, ""user_id"": 5, ""review_text"": ""Good quality, fast shipping!"", ""rating_details"": {""quality"": 4, ""value_for_money"": 4, ""ease_of_use"": 5}}",0
+"POST /discount/validate HTTP/1.1\nContent-Type: application/json\n{""discount_code"": ""SUMMER2025"", ""items_in_cart"": [{""product_id"": 123, ""quantity"": 1}, {""product_id"": 456, ""quantity"": 2}], ""total_amount"": 225.00}",0
+"POST /user/terms HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""accepted_terms"": true, ""terms_version"": ""v1.0"", ""accepted_on"": ""2025-02-02""}",0
+"POST /order/update HTTP/1.1\nContent-Type: application/json\n{""order_id"": 6789, ""new_shipping_address"": {""line_1"": ""9876 Maple St"", ""city"": ""NY"", ""zipcode"": ""10003"", ""country"": ""USA""}, ""new_payment_method"": ""paypal""}",0
+"PUT /user/update HTTP/1.1\nContent-Type: application/json\n{""user_id"": 10, ""first_name"": ""John"", ""last_name"": ""Smith"", ""email"": ""johnsmith@example.com"", ""phone"": ""+1234567890""}",0
+"PUT /product/update HTTP/1.1\nContent-Type: application/json\n{""product_id"": 45, ""price"": 49.99, ""quantity"": 150, ""description"": ""Updated description of the product""}",0
+"PUT /cart/update HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 21, ""product_id"": 33, ""quantity"": 5}",0
+"PUT /order/update HTTP/1.1\nContent-Type: application/json\n{""order_id"": 120, ""status"": ""shipped"", ""shipping_address"": {""line_1"": ""56 Street"", ""city"": ""NY"", ""zipcode"": ""10001"", ""country"": ""USA""}}",0
+"PUT /payment/update HTTP/1.1\nContent-Type: application/json\n{""payment_id"": 7890, ""status"": ""pending"", ""amount"": 105.50}",0
+"PUT /product/stock HTTP/1.1\nContent-Type: application/json\n{""product_id"": 101, ""stock_quantity"": 200, ""warehouse_location"": ""NY Warehouse""}",0
+"PUT /address/update HTTP/1.1\nContent-Type: application/json\n{""user_id"": 30, ""address_id"": 5, ""new_address"": {""line_1"": ""789 Pine St"", ""city"": ""LA"", ""zipcode"": ""90001"", ""country"": ""USA""}}",0
+"PUT /discount/update HTTP/1.1\nContent-Type: application/json\n{""discount_id"": 10, ""discount_percentage"": 20, ""validity_period"": {""start_date"": ""2025-01-01"", ""end_date"": ""2025-12-31""}}",0
+"PUT /order/modify HTTP/1.1\nContent-Type: application/json\n{""order_id"": 555, ""product_id"": 22, ""new_quantity"": 3}",0
+"PUT /profile/update HTTP/1.1\nContent-Type: application/json\n{""user_id"": 7, ""bio"": ""Updated bio information"", ""profile_picture"": ""https://example.com/new-profile.jpg""}",0
+"PUT /order/change_address HTTP/1.1\nContent-Type: application/json\n{""order_id"": 435, ""new_shipping_address"": {""line_1"": ""123 Elm St"", ""city"": ""NY"", ""zipcode"": ""10002"", ""country"": ""USA""}}",0
+"PUT /user/settings HTTP/1.1\nContent-Type: application/json\n{""user_id"": 3, ""settings"": {""notifications"": true, ""dark_mode"": true}}",0
+"PUT /product/details/update HTTP/1.1\nContent-Type: application/json\n{""product_id"": 99, ""description"": ""Updated product description"", ""price"": 199.99}",0
+"PUT /cart/clear HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 25}",0
+"PUT /wishlist/update HTTP/1.1\nContent-Type: application/json\n{""user_id"": 12, ""product_id"": 45, ""quantity"": 1}",0
+"PUT /inventory/adjust HTTP/1.1\nContent-Type: application/json\n{""product_id"": 10, ""quantity_adjustment"": -5}",0
+"PUT /payment/card/update HTTP/1.1\nContent-Type: application/json\n{""payment_id"": 567, ""card_number"": ""1234567890123456"", ""expiration_date"": ""2025-12-31"", ""cvv"": ""123""}",0
+"PUT /notification/preferences HTTP/1.1\nContent-Type: application/json\n{""user_id"": 15, ""preferences"": {""email_notifications"": false, ""sms_notifications"": true}}",0
+"PUT /order/mark_as_paid HTTP/1.1\nContent-Type: application/json\n{""order_id"": 678, ""payment_status"": ""completed""}",0
+"PUT /shipping/update HTTP/1.1\nContent-Type: application/json\n{""order_id"": 876, ""carrier"": ""UPS"", ""tracking_number"": ""UPS12345""}",0
+"PUT /user/remove HTTP/1.1\nContent-Type: application/json\n{""user_id"": 30}",0
+"PUT /product/price HTTP/1.1\nContent-Type: application/json\n{""product_id"": 15, ""new_price"": 19.99}",0
+"PUT /review/modify HTTP/1.1\nContent-Type: application/json\n{""review_id"": 102, ""new_rating"": 4, ""new_comment"": ""Updated comment""}",0
+"PUT /order/cancel HTTP/1.1\nContent-Type: application/json\n{""order_id"": 1123, ""cancelation_reason"": ""wrong_product""}",0
+"PUT /user/reset_password HTTP/1.1\nContent-Type: application/json\n{""user_id"": 4, ""new_password"": ""new_secure_password""}",0
+"PUT /referral/update HTTP/1.1\nContent-Type: application/json\n{""referral_code"": ""NEWUSER2025"", ""user_id"": 12}",0
+"DELETE /user/delete HTTP/1.1\nContent-Type: application/json\n{""user_id"": 30}",0
+"DELETE /product/delete HTTP/1.1\nContent-Type: application/json\n{""product_id"": 10}",0
+"DELETE /order/cancel HTTP/1.1\nContent-Type: application/json\n{""order_id"": 123}",0
+"DELETE /cart/remove HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 15, ""product_id"": 22}",0
+"DELETE /discount/remove HTTP/1.1\nContent-Type: application/json\n{""discount_id"": 5}",0
+"DELETE /review/delete HTTP/1.1\nContent-Type: application/json\n{""review_id"": 102}",0
+"DELETE /subscription/cancel HTTP/1.1\nContent-Type: application/json\n{""user_id"": 12, ""subscription_id"": 55}",0
+"DELETE /order/remove_item HTTP/1.1\nContent-Type: application/json\n{""order_id"": 200, ""product_id"": 15}",0
+"DELETE /wishlist/remove HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""product_id"": 11}",0
+"DELETE /address/remove HTTP/1.1\nContent-Type: application/json\n{""user_id"": 10, ""address_id"": 2}",0
+"DELETE /order/remove HTTP/1.1\nContent-Type: application/json\n{""order_id"": 400}",0
+"DELETE /user/logout HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""session_token"": ""abc123""}",0
+"DELETE /cart/clear HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 25}",0
+"DELETE /payment/cancel HTTP/1.1\nContent-Type: application/json\n{""payment_id"": 12345}",0
+"DELETE /product/stock HTTP/1.1\nContent-Type: application/json\n{""product_id"": 10}",0
+"DELETE /event/delete HTTP/1.1\nContent-Type: application/json\n{""event_id"": 1001}",0
+"DELETE /coupon/remove HTTP/1.1\nContent-Type: application/json\n{""coupon_code"": ""DISCOUNT10""}",0
+"DELETE /user/deactivate HTTP/1.1\nContent-Type: application/json\n{""user_id"": 25}",0
+"DELETE /order/confirm_payment HTTP/1.1\nContent-Type: application/json\n{""order_id"": 500}",0
+"DELETE /refund/remove HTTP/1.1\nContent-Type: application/json\n{""refund_id"": 1025}",0
+"DELETE /product/tag HTTP/1.1\nContent-Type: application/json\n{""product_id"": 30, ""tag"": ""out_of_stock""}",0
+"DELETE /discount/clear HTTP/1.1\nContent-Type: application/json\n{""discount_id"": 15}",0
+"DELETE /transaction/cancel HTTP/1.1\nContent-Type: application/json\n{""transaction_id"": 25}",0
+"DELETE /user/preferences/remove HTTP/1.1\nContent-Type: application/json\n{""user_id"": 12, ""preference_id"": 10}",0
+"DELETE /notification/unsubscribe HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""notification_id"": 7}",0
+"DELETE /cart/clear_all HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 8}",0
+"DELETE /product/disable HTTP/1.1\nContent-Type: application/json\n{""product_id"": 1001}",0
+"POST /login HTTP/1.1\nContent-Type: application/json\n{""email"": ""user@example.com"", ""password"": ""mypassword""}",0
+"POST /signup HTTP/1.1\nContent-Type: application/json\n{""username"": ""newuser"", ""email"": ""newuser@example.com"", ""password"": ""securepassword""}",0
+"POST /product/add HTTP/1.1\nContent-Type: application/json\n{""product_name"": ""Laptop"", ""category"": ""electronics"", ""price"": 1200, ""stock_quantity"": 30, ""tags"": [""tech"", ""gadgets""], ""description"": ""High-performance laptop.""}",0
+"POST /order/create HTTP/1.1\nContent-Type: application/json\n{""user_id"": 10, ""product_id"": 20, ""quantity"": 2, ""payment_method"": ""credit_card"", ""shipping_address"": {""line_1"": ""123 Main St"", ""city"": ""NY"", ""zipcode"": ""10001""}}",0
+"POST /cart/add HTTP/1.1\nContent-Type: application/json\n{""user_id"": 10, ""product_id"": 15, ""quantity"": 1}",0
+"POST /order/return HTTP/1.1\nContent-Type: application/json\n{""order_id"": 105, ""product_id"": 15, ""return_reason"": ""defective""}",0
+"POST /order/update_address HTTP/1.1\nContent-Type: application/json\n{""order_id"": 300, ""new_shipping_address"": {""line_1"": ""456 Oak St"", ""city"": ""LA"", ""zipcode"": ""90001""}}",0
+"POST /review/submit HTTP/1.1\nContent-Type: application/json\n{""product_id"": 12, ""rating"": 4, ""review_text"": ""Great product!""}",0
+"POST /user/preferences HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""preferences"": {""email_notifications"": true, ""sms_notifications"": false}}",0
+"POST /payment/process HTTP/1.1\nContent-Type: application/json\n{""payment_method"": ""paypal"", ""amount"": 199.99, ""order_id"": 101}",0
+"POST /user/logout HTTP/1.1\nContent-Type: application/json\n{""user_id"": 10, ""session_token"": ""xyz123""}",0
+"POST /event/register HTTP/1.1\nContent-Type: application/json\n{""event_id"": 5, ""user_id"": 10, ""attendance_status"": ""confirmed""}",0
+"POST /discount/apply HTTP/1.1\nContent-Type: application/json\n{""discount_code"": ""SUMMER20"", ""order_id"": 200}",0
+"POST /subscription/update HTTP/1.1\nContent-Type: application/json\n{""user_id"": 10, ""new_plan"": ""premium""}",0
+"POST /address/add HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""address"": {""line_1"": ""789 Maple St"", ""city"": ""NY"", ""zipcode"": ""10002""}}",0
+"POST /wishlist/add HTTP/1.1\nContent-Type: application/json\n{""user_id"": 10, ""product_id"": 25}",0
+"POST /order/status HTTP/1.1\nContent-Type: application/json\n{""order_id"": 400, ""status"": ""shipped""}",0
+"POST /product/discount HTTP/1.1\nContent-Type: application/json\n{""product_id"": 55, ""discount_percentage"": 15}",0
+"POST /profile/upload_picture HTTP/1.1\nContent-Type: application/json\n{""user_id"": 10, ""picture_url"": ""https://example.com/profile.jpg""}",0
+"POST /order/confirm_payment HTTP/1.1\nContent-Type: application/json\n{""order_id"": 1001, ""payment_status"": ""completed""}",0
+"POST /payment/refund HTTP/1.1\nContent-Type: application/json\n{""transaction_id"": ""TX12345"", ""amount"": 99.99}",0
+"POST /product/details HTTP/1.1\nContent-Type: application/json\n{""product_id"": 45, ""include_reviews"": true}",0
+"POST /user/verify HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""verification_code"": ""ABC123""}",0
+GET / HTTP/1.1\nContent-Type: application/json\n{},0
+GET /product/1 HTTP/1.1\nContent-Type: application/json\n{},0
+GET /order/1234 HTTP/1.1\nContent-Type: application/json\n{},0
+GET /user/profile HTTP/1.1\nContent-Type: application/json\n{},0
+GET /products HTTP/1.1\nContent-Type: application/json\n{},0
+GET /cart HTTP/1.1\nContent-Type: application/json\n{},0
+GET /orders HTTP/1.1\nContent-Type: application/json\n{},0
+"GET /order/track HTTP/1.1\nContent-Type: application/json\n{""order_id"": 100}",0
+GET /user/settings HTTP/1.1\nContent-Type: application/json\n{},0
+GET /reviews HTTP/1.1\nContent-Type: application/json\n{},0
+"GET /products/search HTTP/1.1\nContent-Type: application/json\n{""query"": ""laptop""}",0
+GET /wishlist HTTP/1.1\nContent-Type: application/json\n{},0
+GET /category/electronics HTTP/1.1\nContent-Type: application/json\n{},0
+GET /user/notifications HTTP/1.1\nContent-Type: application/json\n{},0
+GET /shipping/rates HTTP/1.1\nContent-Type: application/json\n{},0
+"GET /payment/status HTTP/1.1\nContent-Type: application/json\n{""payment_id"": ""TX123""}",0
+"GET /order/details HTTP/1.1\nContent-Type: application/json\n{""order_id"": 1234}",0
+"PUT /user/update HTTP/1.1\nContent-Type: application/json\n{""user_id"": 10, ""first_name"": ""John"", ""last_name"": ""Smith"", ""email"": ""johnsmith@example.com"", ""phone"": ""+1234567890"", ""token"": ""abc123xyz""}",0
+"PUT /product/update HTTP/1.1\nContent-Type: application/json\n{""product_id"": 45, ""price"": 49.99, ""quantity"": 150, ""description"": ""Updated description of the product"", ""token"": ""abc123xyz""}",0
+"PUT /cart/update HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 21, ""product_id"": 33, ""quantity"": 5, ""token"": ""abc123xyz""}",0
+"PUT /order/update HTTP/1.1\nContent-Type: application/json\n{""order_id"": 120, ""status"": ""shipped"", ""shipping_address"": {""line_1"": ""56 Street"", ""city"": ""NY"", ""zipcode"": ""10001"", ""country"": ""USA""}, ""token"": ""abc123xyz""}",0
+"PUT /payment/update HTTP/1.1\nContent-Type: application/json\n{""payment_id"": 7890, ""status"": ""pending"", ""amount"": 105.50, ""token"": ""abc123xyz""}",0
+"PUT /product/stock HTTP/1.1\nContent-Type: application/json\n{""product_id"": 101, ""stock_quantity"": 200, ""warehouse_location"": ""NY Warehouse"", ""token"": ""abc123xyz""}",0
+"PUT /address/update HTTP/1.1\nContent-Type: application/json\n{""user_id"": 30, ""address_id"": 5, ""new_address"": {""line_1"": ""789 Pine St"", ""city"": ""LA"", ""zipcode"": ""90001"", ""country"": ""USA""}, ""token"": ""abc123xyz""}",0
+"PUT /discount/update HTTP/1.1\nContent-Type: application/json\n{""discount_id"": 10, ""discount_percentage"": 20, ""validity_period"": {""start_date"": ""2025-01-01"", ""end_date"": ""2025-12-31""}, ""token"": ""abc123xyz""}",0
+"PUT /order/modify HTTP/1.1\nContent-Type: application/json\n{""order_id"": 555, ""product_id"": 22, ""new_quantity"": 3, ""token"": ""abc123xyz""}",0
+"PUT /profile/update HTTP/1.1\nContent-Type: application/json\n{""user_id"": 7, ""bio"": ""Updated bio information"", ""profile_picture"": ""https://example.com/new-profile.jpg"", ""token"": ""abc123xyz""}",0
+"PUT /order/change_address HTTP/1.1\nContent-Type: application/json\n{""order_id"": 435, ""new_shipping_address"": {""line_1"": ""123 Elm St"", ""city"": ""NY"", ""zipcode"": ""10002"", ""country"": ""USA""}, ""token"": ""abc123xyz""}",0
+"PUT /user/settings HTTP/1.1\nContent-Type: application/json\n{""user_id"": 3, ""settings"": {""notifications"": true, ""dark_mode"": true}, ""token"": ""abc123xyz""}",0
+"PUT /product/details/update HTTP/1.1\nContent-Type: application/json\n{""product_id"": 99, ""description"": ""Updated product description"", ""price"": 199.99, ""token"": ""abc123xyz""}",0
+"PUT /cart/clear HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 25, ""token"": ""abc123xyz""}",0
+"PUT /wishlist/update HTTP/1.1\nContent-Type: application/json\n{""user_id"": 12, ""product_id"": 45, ""quantity"": 1, ""token"": ""abc123xyz""}",0
+"PUT /inventory/adjust HTTP/1.1\nContent-Type: application/json\n{""product_id"": 10, ""quantity_adjustment"": -5, ""token"": ""abc123xyz""}",0
+"PUT /payment/card/update HTTP/1.1\nContent-Type: application/json\n{""payment_id"": 567, ""card_number"": ""1234567890123456"", ""expiration_date"": ""2025-12-31"", ""cvv"": ""123"", ""token"": ""abc123xyz""}",0
+"PUT /notification/preferences HTTP/1.1\nContent-Type: application/json\n{""user_id"": 15, ""preferences"": {""email_notifications"": false, ""sms_notifications"": true}, ""token"": ""abc123xyz""}",0
+"PUT /order/mark_as_paid HTTP/1.1\nContent-Type: application/json\n{""order_id"": 678, ""payment_status"": ""completed"", ""token"": ""abc123xyz""}",0
+"PUT /shipping/update HTTP/1.1\nContent-Type: application/json\n{""order_id"": 876, ""carrier"": ""UPS"", ""tracking_number"": ""UPS12345"", ""token"": ""abc123xyz""}",0
+"PUT /user/remove HTTP/1.1\nContent-Type: application/json\n{""user_id"": 30, ""token"": ""abc123xyz""}",0
+"PUT /product/price HTTP/1.1\nContent-Type: application/json\n{""product_id"": 15, ""new_price"": 19.99, ""token"": ""abc123xyz""}",0
+"DELETE /user/delete HTTP/1.1\nContent-Type: application/json\n{""user_id"": 30, ""token"": ""abc123xyz""}",0
+"DELETE /product/delete HTTP/1.1\nContent-Type: application/json\n{""product_id"": 10, ""token"": ""abc123xyz""}",0
+"DELETE /order/cancel HTTP/1.1\nContent-Type: application/json\n{""order_id"": 123, ""token"": ""abc123xyz""}",0
+"DELETE /cart/remove HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 15, ""product_id"": 22, ""token"": ""abc123xyz""}",0
+"DELETE /discount/remove HTTP/1.1\nContent-Type: application/json\n{""discount_id"": 5, ""token"": ""abc123xyz""}",0
+"DELETE /review/delete HTTP/1.1\nContent-Type: application/json\n{""review_id"": 102, ""token"": ""abc123xyz""}",0
+"DELETE /subscription/cancel HTTP/1.1\nContent-Type: application/json\n{""user_id"": 12, ""subscription_id"": 55, ""token"": ""abc123xyz""}",0
+"DELETE /order/remove_item HTTP/1.1\nContent-Type: application/json\n{""order_id"": 200, ""product_id"": 15, ""token"": ""abc123xyz""}",0
+"DELETE /wishlist/remove HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""product_id"": 11, ""token"": ""abc123xyz""}",0
+"DELETE /address/remove HTTP/1.1\nContent-Type: application/json\n{""user_id"": 10, ""address_id"": 2, ""token"": ""abc123xyz""}",0
+"DELETE /order/remove HTTP/1.1\nContent-Type: application/json\n{""order_id"": 400, ""token"": ""abc123xyz""}",0
+"DELETE /user/logout HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""session_token"": ""abc123xyz"", ""token"": ""abc123xyz""}",0
+"DELETE /cart/clear HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 25, ""token"": ""abc123xyz""}",0
+"DELETE /payment/cancel HTTP/1.1\nContent-Type: application/json\n{""payment_id"": 12345, ""token"": ""abc123xyz""}",0
+"DELETE /product/stock HTTP/1.1\nContent-Type: application/json\n{""product_id"": 10, ""token"": ""abc123xyz""}",0
+"DELETE /event/delete HTTP/1.1\nContent-Type: application/json\n{""event_id"": 1001, ""token"": ""abc123xyz""}",0
+"DELETE /coupon/remove HTTP/1.1\nContent-Type: application/json\n{""coupon_code"": ""DISCOUNT10"", ""token"": ""abc123xyz""}",0
+"DELETE /user/deactivate HTTP/1.1\nContent-Type: application/json\n{""user_id"": 25, ""token"": ""abc123xyz""}",0
+"DELETE /order/confirm_payment HTTP/1.1\nContent-Type: application/json\n{""order_id"": 500, ""token"": ""abc123xyz""}",0
+"DELETE /refund/remove HTTP/1.1\nContent-Type: application/json\n{""refund_id"": 1025, ""token"": ""abc123xyz""}",0
+"DELETE /product/tag HTTP/1.1\nContent-Type: application/json\n{""product_id"": 30, ""tag"": ""out_of_stock"", ""token"": ""abc123xyz""}",0
+"DELETE /discount/clear HTTP/1.1\nContent-Type: application/json\n{""discount_id"": 15, ""token"": ""abc123xyz""}",0
+"DELETE /transaction/cancel HTTP/1.1\nContent-Type: application/json\n{""transaction_id"": 25, ""token"": ""abc123xyz""}",0
+"DELETE /user/preferences/remove HTTP/1.1\nContent-Type: application/json\n{""user_id"": 12, ""preference_id"": 10, ""token"": ""abc123xyz""}",0
+"DELETE /notification/unsubscribe HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""notification_id"": 7, ""token"": ""abc123xyz""}",0
+DELETE /cart/clear_all HTTP/1.1\nContent-Type,0
+"POST /user/register HTTP/1.1\nContent-Type: application/json\n{""first_name"": ""John"", ""last_name"": ""Doe"", ""email"": ""john.doe@example.com"", ""password"": ""password123"", ""token"": ""abc123xyz""}",0
+"POST /product/create HTTP/1.1\nContent-Type: application/json\n{""name"": ""New Product"", ""price"": 199.99, ""stock_quantity"": 100, ""description"": ""A newly launched product"", ""token"": ""abc123xyz""}",0
+"POST /order/create HTTP/1.1\nContent-Type: application/json\n{""user_id"": 30, ""product_id"": 12, ""quantity"": 2, ""payment_method"": ""credit_card"", ""shipping_address"": {""line_1"": ""123 Elm St"", ""city"": ""NY"", ""zipcode"": ""10001"", ""country"": ""USA""}, ""token"": ""abc123xyz""}",0
+"POST /payment/charge HTTP/1.1\nContent-Type: application/json\n{""order_id"": 555, ""payment_amount"": 299.99, ""payment_method"": ""paypal"", ""token"": ""abc123xyz""}",0
+"POST /cart/add HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 20, ""product_id"": 99, ""quantity"": 1, ""token"": ""abc123xyz""}",0
+"POST /order/place HTTP/1.1\nContent-Type: application/json\n{""user_id"": 10, ""product_id"": 50, ""quantity"": 3, ""shipping_address"": {""line_1"": ""456 Oak St"", ""city"": ""LA"", ""zipcode"": ""90002"", ""country"": ""USA""}, ""payment_method"": ""credit_card"", ""token"": ""abc123xyz""}",0
+"POST /user/login HTTP/1.1\nContent-Type: application/json\n{""email"": ""john.doe@example.com"", ""password"": ""password123"", ""token"": ""abc123xyz""}",0
+"POST /notification/send HTTP/1.1\nContent-Type: application/json\n{""user_id"": 15, ""message"": ""Your order has been shipped"", ""token"": ""abc123xyz""}",0
+"POST /subscription/subscribe HTTP/1.1\nContent-Type: application/json\n{""user_id"": 9, ""plan_id"": 2, ""token"": ""abc123xyz""}",0
+"POST /review/submit HTTP/1.1\nContent-Type: application/json\n{""product_id"": 45, ""user_id"": 10, ""rating"": 5, ""review_text"": ""Excellent product!"", ""token"": ""abc123xyz""}",0
+"POST /discount/create HTTP/1.1\nContent-Type: application/json\n{""discount_code"": ""WINTERSALE"", ""discount_percentage"": 20, ""valid_from"": ""2025-01-01"", ""valid_to"": ""2025-12-31"", ""token"": ""abc123xyz""}",0
+"POST /cart/checkout HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 7, ""payment_method"": ""credit_card"", ""token"": ""abc123xyz""}",0
+"POST /order/update_status HTTP/1.1\nContent-Type: application/json\n{""order_id"": 400, ""status"": ""shipped"", ""token"": ""abc123xyz""}",0
+"POST /wishlist/add HTTP/1.1\nContent-Type: application/json\n{""user_id"": 8, ""product_id"": 25, ""token"": ""abc123xyz""}",0
+"POST /user/logout HTTP/1.1\nContent-Type: application/json\n{""user_id"": 15, ""session_token"": ""abc123xyz"", ""token"": ""abc123xyz""}",0
+"POST /payment/add_card HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""card_number"": ""1234567890123456"", ""expiration_date"": ""12/25"", ""cvv"": ""123"", ""token"": ""abc123xyz""}",0
+"POST /user/update_profile HTTP/1.1\nContent-Type: application/json\n{""user_id"": 30, ""bio"": ""Updated bio"", ""profile_picture"": ""https://example.com/profile.jpg"", ""token"": ""abc123xyz""}",0
+"POST /product/review HTTP/1.1\nContent-Type: application/json\n{""product_id"": 2, ""review_text"": ""Great product!"", ""rating"": 4, ""token"": ""abc123xyz""}",0
+GET /user/profile HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json,0
+GET /product/list HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json,0
+"GET /order/status HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json\n{""order_id"": 250}",0
+"GET /cart/details HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json\n{""cart_id"": 10}",0
+GET /discounts HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json,0
+"GET /notification/history HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json\n{""user_id"": 12}",0
+"GET /order/history HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json\n{""user_id"": 25}",0
+"GET /product/details HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json\n{""product_id"": 15}",0
+"GET /wishlist/items HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json\n{""user_id"": 5}",0
+"GET /payment/status HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json\n{""payment_id"": 1001}",0
+"GET /address/list HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json\n{""user_id"": 12}",0
+"GET /inventory/check HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json\n{""product_id"": 10}",0
+"GET /user/notifications HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json\n{""user_id"": 15}",0
+"GET /order/summary HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json\n{""order_id"": 205}",0
+"GET /product/price HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json\n{""product_id"": 25}",0
+GET /coupon/list HTTP/1.1\nAuthorization: Bearer abc123xyz\nContent-Type: application/json,0
+"PATCH /user/update HTTP/1.1\nContent-Type: application/json\n{""user_id"": 5, ""first_name"": ""John"", ""last_name"": ""Doe"", ""token"": ""abc123xyz""}",0
+"PATCH /order/update_shipping HTTP/1.1\nContent-Type: application/json\n{""order_id"": 1001, ""shipping_address"": {""line_1"": ""123 New St"", ""city"": ""NY"", ""zipcode"": ""10002"", ""country"": ""USA""}, ""token"": ""abc123xyz""}",0
+"PATCH /product/modify HTTP/1.1\nContent-Type: application/json\n{""product_id"": 30, ""price"": 99.99, ""stock_quantity"": 200, ""token"": ""abc123xyz""}",0
+"PATCH /cart/update_quantity HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 15, ""product_id"": 25, ""quantity"": 3, ""token"": ""abc123xyz""}",0
+"PATCH /payment/update_status HTTP/1.1\nContent-Type: application/json\n{""payment_id"": 333, ""status"": ""confirmed"", ""token"": ""abc123xyz""}",0
+"PATCH /product/details HTTP/1.1\nContent-Type: application/json\n{""product_id"": 50, ""description"": ""Updated description"", ""token"": ""abc123xyz""}",0
+"PATCH /order/add_items HTTP/1.1\nContent-Type: application/json\n{""order_id"": 555, ""product_id"": 25, ""quantity"": 2, ""token"": ""abc123xyz""}",0
+"PATCH /user/reset_password HTTP/1.1\nContent-Type: application/json\n{""user_id"": 30, ""new_password"": ""newpassword123"", ""token"": ""abc123xyz""}",0
+"PATCH /order/modify_quantity HTTP/1.1\nContent-Type: application/json\n{""order_id"": 102, ""product_id"": 5, ""new_quantity"": 3, ""token"": ""abc123xyz""}",0
+"PATCH /inventory/update HTTP/1.1\nContent-Type: application/json\n{""product_id"": 100, ""quantity"": 150, ""token"": ""abc123xyz""}",0
+"PATCH /discount/update_percentage HTTP/1.1\nContent-Type: application/json\n{""discount_id"": 10, ""new_percentage"": 25, ""token"": ""abc123xyz""}",0
+"PATCH /user/subscribe_newsletter HTTP/1.1\nContent-Type: application/json\n{""user_id"": 12, ""subscribe"": true, ""token"": ""abc123xyz""}",0
+"PATCH /notification/preferences HTTP/1.1\nContent-Type: application/json\n{""user_id"": 18, ""preferences"": {""email"": false, ""sms"": true}, ""token"": ""abc123xyz""}",0
+"PATCH /payment/update HTTP/1.1\nContent-Type: application/json\n{""payment_id"": 450, ""method"": ""credit_card"", ""status"": ""pending"", ""token"": ""abc123xyz""}",0
+"PATCH /product/update_details HTTP/1.1\nContent-Type: application/json\n{""product_id"": 10, ""details"": ""Updated product details"", ""token"": ""abc123xyz""}",0
+"PATCH /cart/remove_item HTTP/1.1\nContent-Type: application/json\n{""cart_id"": 15, ""product_id"": 50, ""token"": ""abc123xyz""}",0
