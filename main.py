@@ -1,77 +1,101 @@
 import re
-from sklearn.feature_extraction.text import TfidfVectorizer
+import joblib
+from pathlib import Path
+from sklearn.pipeline import Pipeline, FeatureUnion
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-from sklearn.model_selection import cross_val_score
+from sklearn.metrics import classification_report
+import pandas as pd
+class WAFModel:
+    def __init__(self):
+        self.model = Pipeline([
+            ('features', FeatureUnion([
+                ('char_ngrams', TfidfVectorizer(analyzer='char', ngram_range=(3, 5))),
+                ('word_ngrams', TfidfVectorizer(analyzer='word', token_pattern=r'\S+')),
+                ('specials', CountVectorizer(
+                    analyzer='char', 
+                    vocabulary=['=', '&', "*", '"', ';', '<', '>', '{', '}', '[', ']', '(', ')']
+                ))
+            ])),
+            
+            ('classifier', RandomForestClassifier(
+                n_estimators=100,
+                class_weight='balanced',
+                random_state=42
+            ))
+        ])
+    
+    def train(self, X, y):
+        self.model.fit(X, y)
+    
+    def predict(self, text):
+        return self.model.predict([text])[0]
+    
+    def save(self, path):
+        joblib.dump(self.model, path)
+    
+    @classmethod
+    def load(cls, path):
+        instance = cls()
+        instance.model = joblib.load(path)
+        return instance
 
-X = [
-    "admin' OR 1=1--",                                
-    "'; DROP TABLE users;--",                            
-    "| ls /etc/passwd",                                  
-    "& ping -n 4 127.0.0.1",                            
-    "admin' OR '1'='1' -- -",                            
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-    "password=secret123",                               
-    "Authorization: Bearer eyJ0eXAiOiJKV1Qi...",        
-    '<?xml version="1.0"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM "file:///etc/passwd">]><foo>&xxe;</foo>',
-    "/api/user/1234/delete",                             
-    "../../../../etc/passwd",                            
-    "/wp-admin",                                         
-    "/.git/config",                                      
-    "/phpinfo.php",                                      
-    "<script>alert('XSS')</script>",                     
-    "<img src=x onerror=alert(1)>",                      
-    "javascript:eval('alert(1)')",                       
-    "rO0ABXNyABFqYXZhLnV0aWwuSGFzaFNldLpEhZWWuLc0AwAAeHB3DAAAAAI/QAAAAAAAAAA=",
-    'O:4:"User":2:{s:4:"name";s:6:"Attacker";s:8:"isAdmin";b:1;}',
-    "curl -A 'Apache-HttpClient/4.2 (UNAVAILABLE)'", 
-    "Struts2 exploit: %{(#_='multipart/form-data').(...)",
-    "user=admin\n[CRITICAL] Failed login",
-    "normal-request-123",
-    "/index.html",
-    "search?q=weather",
-    "search?q=bag&item=1&product=3",
-    "search?q=kiannaquines&item=1&product=3",
-    "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-    "dashboard/",
-    "dashboard/users"
-]
+if __name__ == "__main__":
+    
+    df = pd.read_csv('./dataset/combined_dataset.csv')
+    df.dropna(inplace=True)
 
-y = [
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1,
-    0, 0, 0, 0, 0, 0, 0, 0
-]
+    X = df['payload']
+    y = df['label']
+    
+    waf = WAFModel()
+    waf.train(X, y)
+    waf.save('waf_model.joblib')
+    
+    payloads = [
+        "admin' OR 1=1--",
+        "'); DROP TABLE users;--",
+        "1' UNION SELECT username, password FROM users--",
+        "admin' OR '1'='1' -- -",
+        "<script>alert('XSS')</script>",
+        "<img src=x onerror=alert(1)>",
+        "javascript:eval('alert(1)')",
+        "<svg/onload=alert(1)>",
+        "../../../../etc/passwd",
+        "%2e%2e%2fetc%2fpasswd",
+        "....//....//etc/passwd",
+        "| ls /etc/passwd",
+        "& ping -n 4 127.0.0.1",
+        "; cat /etc/shadow",
+        '<?xml version="1.0"?><!DOCTYPE foo [<!ENTITY xxe SYSTEM "file:///etc/passwd">]>',
+        'O:4:"User":2:{s:4:"name";s:6:"Attacker";s:8:"isAdmin";b:1;}',
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        "{{7*7}}",
+        "${7*7}",
+        "User-Agent: Mozilla/5.0\nX-Forwarded-For: 127.0.0.1",
+        "search?q=weather",
+        "search?q=bag&item=1&product=3",
+        "search?q=kiannaquines&item=1&product=3",
+        "/index.html",
+        "/about-us",
+        "/contact",
+        "/products/shoes",
+        "/api/users/123",
+        "/api/products?category=electronics",
+        "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+        "Accept: application/json",
+        "id=12345",
+        "page=2&limit=10",
+        "sort=price&order=asc",        
+        "username=john&password=secure123",
+        "grant_type=password&client_id=webapp",        
+        "filename=report.pdf",
+        "content-type=image/png",        
+        "/dashboard/",
+        "/user/profile",
+        "/checkout/cart"
+    ]
 
-def preprocess_text(text):
-    text = text.lower()
-    text = re.sub(r'\s+', ' ', text)
-    text = re.sub(r'[^\w\s]', '', text)
-    return text
-
-X_processed = [preprocess_text(payload) for payload in X]
-
-vectorizer = TfidfVectorizer(analyzer='char', ngram_range=(3, 5))
-X_features = vectorizer.fit_transform(X_processed)
-
-X_train, X_test, y_train, y_test = train_test_split(X_features, y, test_size=0.2, random_state=42)
-
-model = RandomForestClassifier(n_estimators=100, random_state=42)
-model.fit(X_train, y_train)
-
-
-y_pred = model.predict(X_test)
-
-accuracy = accuracy_score(y_test, y_pred)
-scores = cross_val_score(model, X_features, y, cv=5, scoring='f1')
-
-print("F1 scores:", scores)
-print("Mean F1 score:", scores.mean())
-print("Accuracy Score:", accuracy)
-
-new_request = 'dashboard/index/'
-new_request_processed = preprocess_text(new_request)
-prediction = model.predict(vectorizer.transform([new_request_processed]))
-print("Block Request" if prediction == 1 else "Allow Request")
+    for payload in payloads:
+        print("Prediction:", "BLOCK" if waf.predict(payload) else "ALLOW")
