@@ -23,7 +23,7 @@
     },
     {
         "request": {
-            "url": "http://testphp.vulnweb.com/userinfo.php",
+            "url": "http://testphp.vulnweb.com/userinfo.php?q=SLEEP",
             "method": "POST",
             "headers": {
                 "Content-Length": "52",
