@@ -3,4 +3,4 @@ TODO.md
 .env.backup
 venv
 dataset.npz
-./request_predictor.joblib
+request_predictor.joblib
