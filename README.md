@@ -7,20 +7,20 @@
 ## Model
 The model is designed to classify input payloads (e.g., strings of text) into predefined categories, such as "malicious" or "benign." It leverages a machine learning pipeline consisting of the following components:
 
-1. Feature Extraction :
+1. <b>Feature Extraction :</b>
     The model uses TfidfVectorizer with character-level n-grams (analyzer='char') to transform raw text data into numerical feature vectors. This approach captures patterns in sequences of characters, making it suitable for tasks like detecting malicious payloads in web applications.
 
-2. Classification :
+2. <b>Classification :</b>
     A Support Vector Machine (SVM) classifier is employed to perform the classification task. The SVM is configured with a radial basis function (RBF) kernel and optimized hyperparameters (C=10, ngram_range=(1, 4)) to achieve high accuracy on the dataset.
 
-3. Training Process :
+3. <b>Training Process :</b>
     The model was trained on a labeled dataset containing various types of payloads. The dataset was preprocessed to ensure consistency, and a stratified train-test split was used to evaluate performance.
     Hyperparameter tuning was performed using GridSearchCV to optimize key parameters such as ngram_range, C, and kernel.
 
-4. Performance :
+4. <b>Performance :</b>
     The trained model demonstrates strong generalization capabilities, achieving high precision, recall, and F1 scores on the test set. A confusion matrix and classification report are available for detailed performance analysis.
 
-5. Deployment :
+5. <b>Deployment :</b>
     The trained model is serialized and saved as request_predictor.joblib. It can be loaded and used for real-time predictions via the WafDetector class, which handles payload parsing and prediction.
 
 
