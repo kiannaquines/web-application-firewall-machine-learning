@@ -1,24 +1,33 @@
 ## Web Application Firewall
 <p>This is my own version of implementing a web application firewall using machine learning algorithm.</p>
 
-![Image](https://github.com/user-attachments/assets/0f4e5ac3-c9bf-4524-ba1c-14a5cb99697f)
-![Image](https://github.com/user-attachments/assets/cf4991c8-c930-4cf5-b198-533629cb175f)
+![Image](https://github.com/user-attachments/assets/bcfc600e-2abf-4630-ab0d-92dda118fb1e)
+![Image](https://github.com/user-attachments/assets/005f57dd-d967-472d-89ce-84eb43d8c58d)
 
 ## Model
-<p>Fitting the model in each algorithm takes <b>4 hours</b> because of crappy specs of my laptop (CPU Based). It was so slow in fitting since the dataset that the model was trained has 100k+ records no GPU. 😅</p>
-<p>The model was trained on both DecisionTreeClassifier & RandomForest, each algorithm got there own accuracy score.</p>
+The model is designed to classify input payloads (e.g., strings of text) into predefined categories, such as "malicious" or "benign." It leverages a machine learning pipeline consisting of the following components:
 
-![Image](https://github.com/user-attachments/assets/167fe288-6674-47d1-a71e-427b866446e2)
+1. Feature Extraction :
+    The model uses TfidfVectorizer with character-level n-grams (analyzer='char') to transform raw text data into numerical feature vectors. This approach captures patterns in sequences of characters, making it suitable for tasks like detecting malicious payloads in web applications.
 
+2. Classification :
+    A Support Vector Machine (SVM) classifier is employed to perform the classification task. The SVM is configured with a radial basis function (RBF) kernel and optimized hyperparameters (C=10, ngram_range=(1, 4)) to achieve high accuracy on the dataset.
+
+3. Training Process :
+    The model was trained on a labeled dataset containing various types of payloads. The dataset was preprocessed to ensure consistency, and a stratified train-test split was used to evaluate performance.
+    Hyperparameter tuning was performed using GridSearchCV to optimize key parameters such as ngram_range, C, and kernel.
+
+4. Performance :
+    The trained model demonstrates strong generalization capabilities, achieving high precision, recall, and F1 scores on the test set. A confusion matrix and classification report are available for detailed performance analysis.
+
+5. Deployment :
+    The trained model is serialized and saved as request_predictor.joblib. It can be loaded and used for real-time predictions via the WafDetector class, which handles payload parsing and prediction.
+
+
+![Image](https://github.com/user-attachments/assets/f3bf7245-59e6-4a33-b6a7-868d21ec32f6)
 
 # Result
 
-![Image](https://github.com/user-attachments/assets/1b9ec1fa-a955-4597-b81e-fd03b3857a89)
-<p>Out of 222 sql injection payload request 6 are missed to block the request.</p>
+![Image](https://github.com/user-attachments/assets/66984891-c76f-431f-97ee-9cb92a493b3d)
 
-![Image](https://github.com/user-attachments/assets/d9e6cd97-8a1b-47e0-894e-986dbc387872)
-
-<p>Out of 64 normal request 2 are missed to allow the request.</p>
-
-
-![Image](https://github.com/user-attachments/assets/9109e76b-0cee-44c6-b9ac-5c33d53e7e4e)
+![Image](https://github.com/user-attachments/assets/83e8ee14-1615-45be-821e-5eed33829f51)
