@@ -1,6 +1,9 @@
 ## Web Application Firewall
 <p>This is my optimized version of web application firewall using support vector machine algorithm.</p>
 
+## Limitation
+<p>This only check the body and its parameters <b>AS OF NOW</b></p>
+
 ![Image](https://github.com/user-attachments/assets/bcfc600e-2abf-4630-ab0d-92dda118fb1e)
 ![Image](https://github.com/user-attachments/assets/005f57dd-d967-472d-89ce-84eb43d8c58d)
 
