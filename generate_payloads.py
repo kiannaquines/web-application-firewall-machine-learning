@@ -8,7 +8,6 @@ def generate_random_string(min_length=3, max_length=10):
     length = random.randint(min_length, max_length)
     return ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(length))
 
-# XSS Payload Generators
 def generate_xss_payload():
     xss_templates = [
         "<script>{code}</script>",
@@ -54,7 +53,6 @@ def generate_xss_payload():
         param=generate_random_string()
     )
 
-# Command Injection Payload Generators
 def generate_cmdi_payload():
     cmdi_templates = [
         "{cmd}",
@@ -119,7 +117,6 @@ def generate_cmdi_payload():
         prefix=generate_random_string()
     )
 
-# Path Traversal Payload Generators
 def generate_path_traversal_payload():
     path_traversal_templates = [
         "../{target_file}",
@@ -188,7 +185,6 @@ def generate_path_traversal_payload():
         dir_prefix=random.choice(["/var/www/", "/home/", "/usr/local/", ""])
     )
 
-# SQL Injection Payload Generators
 def generate_sqli_payload():
     sqli_templates = [
         "' OR {condition} --",
@@ -373,13 +369,10 @@ def save_to_csv(payloads, filename="attack_payloads.csv"):
     print(f"Successfully saved {sum(len(p) for p in payloads.values())} payloads to {filename}")
 
 if __name__ == "__main__":
-    # Generate 72,763 payloads for each attack type
     payloads = generate_payloads(72763)
     
-    # Save to CSV
     save_to_csv(payloads)
     
-    # Print summary
     print("\nGenerated payload summary:")
     for attack_type, attack_payloads in payloads.items():
         print(f"{attack_type}: {len(attack_payloads)} payloads")
