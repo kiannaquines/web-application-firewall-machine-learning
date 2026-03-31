@@ -1,0 +1,29 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      PORT: ${PORT:-8000}
+      MODEL_ARTIFACT_PATH: ${MODEL_ARTIFACT_PATH:-./artifacts/request_predictor_v2.joblib}
+      WAF_BLOCK_THRESHOLD: ${WAF_BLOCK_THRESHOLD:-0.70}
+      WAF_ALLOW_THRESHOLD: ${WAF_ALLOW_THRESHOLD:-0.80}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    expose:
+      - "8000"
+    volumes:
+      - ./artifacts:/app/artifacts:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  nginx:
+    image: nginx:1.27-alpine
+    depends_on:
+      - app
+    ports:
+      - "${NGINX_PORT:-8080}:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro

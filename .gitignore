@@ -2,6 +2,10 @@ TODO.md
 .env
 .env.backup
 venv
+.venv
 dataset.npz
 request_predictor.joblib
 username.txt
+artifacts/
+__pycache__/
+tests/__pycache__/

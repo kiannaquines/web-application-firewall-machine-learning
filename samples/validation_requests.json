@@ -1,0 +1,20 @@
+[
+  {
+    "method": "GET",
+    "path": "/search",
+    "payload": "hello",
+    "label": "valid"
+  },
+  {
+    "method": "POST",
+    "path": "/submit",
+    "payload": "admin' OR 1=1 --",
+    "label": "sqli"
+  },
+  {
+    "method": "POST",
+    "path": "/submit",
+    "payload": "<script>alert(1)</script>",
+    "label": "xss"
+  }
+]

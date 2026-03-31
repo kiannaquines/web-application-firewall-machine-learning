@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Benign search query",
+    "method": "GET",
+    "path": "/search",
+    "params": {
+      "q": "wireless keyboard"
+    },
+    "label": "valid"
+  },
+  {
+    "name": "Benign JSON submit",
+    "method": "POST",
+    "path": "/submit",
+    "json": {
+      "input": "feedback=great product and fast delivery"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "User-Agent": "validation-client/1.0"
+    },
+    "label": "valid"
+  },
+  {
+    "name": "Benign form submit",
+    "method": "POST",
+    "path": "/submit",
+    "form": {
+      "username": "alice",
+      "note": "meeting at 10am"
+    },
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "label": "valid"
+  },
+  {
+    "name": "Classic SQL injection in query",
+    "method": "GET",
+    "path": "/search",
+    "params": {
+      "q": "admin' OR 1=1 --"
+    },
+    "label": "sqli"
+  },
+  {
+    "name": "Union select probe",
+    "method": "GET",
+    "path": "/search",
+    "params": {
+      "q": "' UNION SELECT username,password FROM users --"
+    },
+    "headers": {
+      "User-Agent": "sqlmap-like-check"
+    },
+    "label": "sqli"
+  },
+  {
+    "name": "Encoded SQL injection",
+    "method": "GET",
+    "path": "/search",
+    "params": {
+      "q": "%27%20OR%201%3D1%20--"
+    },
+    "label": "sqli"
+  },
+  {
+    "name": "Reflected XSS probe",
+    "method": "GET",
+    "path": "/search",
+    "params": {
+      "q": "<script>alert(1)</script>"
+    },
+    "label": "xss"
+  },
+  {
+    "name": "SVG onload XSS in JSON",
+    "method": "POST",
+    "path": "/submit",
+    "json": {
+      "input": "<svg/onload=alert(document.domain)>"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "label": "xss"
+  },
+  {
+    "name": "Double encoded path traversal",
+    "method": "POST",
+    "path": "/submit",
+    "form": {
+      "file": "%252e%252e%252f%252e%252e%252fetc%252fpasswd"
+    },
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "label": "path-traversal"
+  },
+  {
+    "name": "Traversal in query path parameter",
+    "method": "GET",
+    "path": "/search",
+    "params": {
+      "q": "../../../../../var/log/nginx/access.log"
+    },
+    "label": "path-traversal"
+  },
+  {
+    "name": "Command injection in JSON",
+    "method": "POST",
+    "path": "/submit",
+    "json": {
+      "input": "name=demo; cat /etc/passwd"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "label": "cmdi"
+  },
+  {
+    "name": "Command substitution probe",
+    "method": "POST",
+    "path": "/submit",
+    "form": {
+      "host": "$(id)"
+    },
+    "headers": {
+      "Content-Type": "application/x-www-form-urlencoded"
+    },
+    "label": "cmdi"
+  },
+  {
+    "name": "Mixed benign looking request with embedded SQLi",
+    "method": "POST",
+    "path": "/submit",
+    "json": {
+      "input": "user=alice&tab=orders&filter=' OR 1=1 --"
+    },
+    "headers": {
+      "Content-Type": "application/json",
+      "Referer": "http://127.0.0.1/dashboard"
+    },
+    "label": "sqli"
+  },
+  {
+    "name": "Mixed benign looking request with embedded XSS",
+    "method": "POST",
+    "path": "/submit",
+    "json": {
+      "input": "comment=nice post <img src=x onerror=alert(1)>"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "label": "xss"
+  },
+  {
+    "name": "Valid route with noisy punctuation",
+    "method": "GET",
+    "path": "/search",
+    "params": {
+      "q": "sale items -- spring collection"
+    },
+    "label": "valid"
+  }
+]

@@ -1,6 +1,46 @@
 ## Web Application Firewall
 <p>This is my optimized version of web application firewall using support vector machine algorithm.</p>
 
+## Runtime Stack
+<p>The repository now includes a runnable demo stack for serving the model in front of a Flask application:</p>
+
+1. <b>Flask + Gunicorn :</b> `app.py` exposes demo routes, a health endpoint, and an internal authorization endpoint for edge checks.
+2. <b>Nginx :</b> `nginx/default.conf` performs `auth_request` checks on request line and headers before proxying traffic to Flask.
+3. <b>Hybrid protection :</b> Nginx performs the edge check and Flask performs the final body-aware inspection using the trained `WAFDetector`.
+4. <b>Validation replay :</b> `validate_traffic.py` safely replays labeled requests against the protected app and summarizes blocking behavior.
+
+## Quick Start
+```bash
+cp .env.example .env
+docker compose up --build
+```
+
+<p>Once the stack is up:</p>
+
+```bash
+curl http://127.0.0.1:8080/healthz
+curl "http://127.0.0.1:8080/search?q=hello"
+curl -X POST http://127.0.0.1:8080/submit \
+  -H "Content-Type: application/json" \
+  -d '{"input":"admin'\'' OR 1=1 --"}'
+```
+
+```bash
+.venv/bin/python validate_traffic.py \
+  --mode batch \
+  --base-url http://127.0.0.1:8080 \
+  --input-file samples/validation_requests.json
+```
+
+```bash
+.venv/bin/python validate_traffic.py \
+  --mode batch \
+  --base-url http://127.0.0.1:8080 \
+  --input-file samples/advanced_validation_requests.json \
+  --stream \
+  --concurrency 5
+```
+
 ## Limitation
 <p>This only check the body and its parameters <b>AS OF NOW</b></p>
 
